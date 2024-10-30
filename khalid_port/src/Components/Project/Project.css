@@ -1,0 +1,93 @@
+.project_wrapper {
+    background-color: #070D1B;
+    margin-top: 3rem;
+    padding: 2.5rem 0;
+}
+
+.project_container {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.img_box{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-out;
+    border-radius: 5px;
+}
+
+.img_box:hover .image{
+    transform: scale(0.95);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(212, 148, 148);
+    border-radius: 12px;
+    transform: scale(0.9);
+}
+
+.info-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.click a {
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    color: rgb(232, 93, 93);
+    border-radius: 12px;
+}
+
+
+
+.image-card:hover .info-overlay {
+    opacity: 1;
+}
+
+.project_cards{
+    padding-top: 12px;
+}
+
+.button{
+    padding-top: 12px;
+    margin-top: 12px;
+}
+
+.button{
+    color: #070D1B;
+}

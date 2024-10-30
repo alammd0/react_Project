@@ -1,0 +1,157 @@
+.contact_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.from_container{
+    min-width: 45%;
+}
+
+
+.contact_from_container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.contact_from_container h2 {
+    font-size: 24px;
+    color: #d6c3c3;
+    margin-bottom: 20px;
+}
+
+.from_data .input {
+    margin-bottom: 15px;
+}
+
+.from_data input,
+.from_data textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    background-color: #070D1B;
+    border: 2px solid black;
+
+}
+
+.from_data input:focus,
+.from_data textarea:focus {
+    outline: none;
+    border-color: #011123;
+    box-shadow: 0 0 8px #021850;
+}
+
+.from_data .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.from_data button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #0d0228;
+    background-color: #F3C13A;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.from_data button:hover {
+    background-color: #F3C13A;
+}
+
+
+.contact_from_containers {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.heading_cont{
+    padding-bottom: 20px;
+}
+
+.container_cont{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
+
+.icons{
+    display: flex;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    padding: 0.75rem;
+    border-radius: 50%;
+    align-items: center;
+    transition: all 1s;
+}
+
+.content_icon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content_icon h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.container_cont:hover .icons{
+    border-color: #F3C13A;
+}
+
+.content_icon p a{
+    color: rgb(189, 180, 180);
+    font-size: 0.95rem;
+}
+
+.content_icon_text{
+    text-align: start;
+}
+
+.colorChange:hover a{
+    color: #F3C13A;
+}
+
+
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+}
+
+.social-icons h3{
+    font-size: 1.5rem;
+    padding-bottom: 24px;
+    font-weight: 700;
+}
+
+.social_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.icon_1{
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    font-size: 1.25rem;
+    display: flex;
+    transition: all 1s;
+    transform: scale(0.9);
+}
+
+.icon_1:hover{
+    color: #F3C13A;
+    border-color: #F3C13A;
+    transform: scale(1);
+}
