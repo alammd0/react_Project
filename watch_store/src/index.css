@@ -212,6 +212,7 @@
   text-align: center;
   justify-content: center;
   gap: 10px;
+  padding-top: 2px;
 }
 
 .other_page p{
