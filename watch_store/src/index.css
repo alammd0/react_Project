@@ -240,8 +240,40 @@
 
 .login_content_left img{
   height: 450px;
-  width: 450px;
+  width: 100%;
+  border-radius: 8px;
+  transform: scale(0.95);
+  transform: all 0.5s;
 }
 
+.login_content_left:hover img{
+  transform: scale(1);
+}
 
+.password{
+  position: relative;
+}
 
+.password input{
+  width: 100%;
+}
+
+.password span{
+  position: absolute;
+  top: 7.5px;
+  right: 7.5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+}
+
+.conf_password{
+  padding-bottom: 1rem;
+}
+
+.sign_content_left img{
+  height: 550px;
+  width: 100%;
+  border-radius: 8px;
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaGoogle } from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -10,6 +10,9 @@ const Login = () => {
     password: "",
 
   })
+
+
+  const navigate = useNavigate();
 
 
   function clickHandler(event) {
@@ -28,6 +31,9 @@ const Login = () => {
     setLoginData(loginData);
     console.log("printing The data....");
     console.log(loginData);
+
+    navigate("./home");
+
     setLoginData({ email: '', password: '' });
   }
 
