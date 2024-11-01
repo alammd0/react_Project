@@ -39,7 +39,7 @@ const From = () => {
 
         <form onSubmit={submitData}>
           <fieldset>
-            <legend>Persnol Information - Student Information </legend>
+            <legend>Persnol Information - Student Information : </legend>
 
             <div>
               <label htmlFor='firstName'>First Name : </label>
@@ -96,6 +96,7 @@ const From = () => {
             </div>
 
             <br></br>
+
             <div>
               <label htmlFor='adress'> Adress : </label>
               <input 
@@ -107,27 +108,26 @@ const From = () => {
               onChange={clickHandler}
                />
             </div>
+          </fieldset>
 
-            {/* <br></br>
+
+          <fieldset>
+            <legend>Contact Info : </legend>
+
             <div>
-              <label>city : </label>
-              <input type='text' />
+              <label>Phone No : </label>
+              <input type='phone'></input>
             </div>
 
+
+            <br></br>
             <br></br>
 
+
             <div>
-              <label>State : </label>
-              <input type='text' />
+              <label>WhatApp No : </label>
+              <input type='number'></input>
             </div>
-
-            <br></br>
-
-            <div>
-              <label>Country : </label>
-              <input type='text'></input>
-            </div> */}
-
           </fieldset>
 
           <br></br>
