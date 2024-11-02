@@ -74,6 +74,7 @@ const SignUp = () => {
                     onChange={clickHandlers}
                     value={signUpData.name}
                     id='name'
+                    required
                   ></input>
                 </div>
 
@@ -86,6 +87,7 @@ const SignUp = () => {
                     name='email'
                     onChange={clickHandlers}
                     value={signUpData.email}
+                    required
                   ></input>
                 </div>
 
@@ -98,6 +100,7 @@ const SignUp = () => {
                     name='username'
                     onChange={clickHandlers}
                     value={signUpData.username}
+                    required
                   ></input>
                 </div>
 
@@ -111,6 +114,7 @@ const SignUp = () => {
                       onChange={clickHandlers}
                       name='password'
                       value={signUpData.password}
+                      required
                     ></input>
                     <span onClick={() => togglepassVisiblity('password')}> {
                       showPassword.password ? <IoEyeOutline /> : <IoEyeOffSharp />
@@ -129,6 +133,7 @@ const SignUp = () => {
                       name='confirmPassword'
                       onChange={clickHandlers}
                       id='confirmpassword'
+                      required
                     ></input>
                     <span onClick={() => togglepassVisiblity('confirmPassword')}> 
                       { showPassword.confirmPassword ? <IoEyeOutline /> : <IoEyeOffSharp />}

@@ -1,0 +1,67 @@
+.home_Container{
+    background-color: rgb(202, 247, 247);
+    height: 100vh;
+    width: 100vw;
+    padding-top: 5px;
+   
+}
+
+.duplicate_container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem
+}
+
+.home_wrapper{
+    position: relative;
+}
+
+.overlap_contain{
+    position: absolute;
+    top: 7px;
+    left: 2rem;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+.overlap_contain h2{
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normals;
+    letter-spacing: 1px;
+}
+
+.home_Container p{
+    font-size: 1em;
+    font-weight: 400;
+    font-style: 400;
+}
+
+.home_Container button{
+    padding: 1rem 2rem;
+    border: 2px solid rgb(98, 89, 89);
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.hero_btn{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.over_btn:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(218, 216, 209, 0.4);
+}

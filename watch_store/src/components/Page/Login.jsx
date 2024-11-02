@@ -55,6 +55,7 @@ const Login = () => {
               <div className='input'>
                 <label htmlFor='email'>Email </label>
                 <input
+                  required
                   type='email'
                   placeholder='Enter your email address'
                   name='email'
@@ -67,6 +68,7 @@ const Login = () => {
               <div className='input'>
                 <label htmlFor='password'>Password</label>
                 <input
+                  required
                   type='password'
                   placeholder='Password'
                   name='password'
