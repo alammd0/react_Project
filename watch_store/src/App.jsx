@@ -9,8 +9,29 @@ import Cart from "./components/Page/Cart"
 import NavBar from "./components/NavBar"
 import "./App.css"
 import SignUp from "./components/Page/SignUp"
+import { homeCards } from "./data"
+import BlackJet from "./components/Home/CardDetails/BlackJet"
+import Gents from "./components/Home/CardDetails/Gents"
+import XtimeSport from "./components/Home/CardDetails/XtimeSport"
+import Apollo from "./components/Home/CardDetails/Apollo"
 
 function App() {
+
+
+  const getComponent = (title) => {
+    switch (title) {
+      case "BLACK JET":
+        return <BlackJet />
+      case "Gents":
+        return <Gents />
+      case "Xtime Sport":
+        return <XtimeSport />
+      case "Apollo":
+        return <Apollo />
+      default : 
+      return null;
+    }
+  }
 
   return (
     <>
@@ -29,7 +50,12 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cart />} />
 
-          <Route path="/signup" element = {<SignUp/>} /> 
+          <Route path="/signup" element={<SignUp />} />
+
+          {homeCards.map((card) => (
+            <Route key={card.title} path={card.path} element={getComponent(card.title)} />
+          ))}
+
         </Routes>
 
       </div>

@@ -11,7 +11,7 @@
     padding: 1.5rem 1rem;
     text-align: center;
     border: 3px solid rgb(230, 179, 179, 0.5);
-    margin-bottom: 2rem;
+    border-radius: 12px;
 }
 
 
@@ -48,4 +48,12 @@
 
 .view_det_btn{
     text-decoration: none;
+}
+
+
+/* footer section */
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
 }

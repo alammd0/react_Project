@@ -15,7 +15,7 @@ export const homeCards = [
         img: "https://static.wixstatic.com/media/a9ff3b_7dce82cc188848a09707966954bd73eb.jpg/v1/fill/w_274,h_274,al_c,q_85,usm_0.66_1.00_0.01/a9ff3b_7dce82cc188848a09707966954bd73eb.webp",
         title: "Xtime Sport",
         price: "$79.00",
-        path:"/home/xtime"
+        path:"/home/xtimesport"
     },
     {
         img: "https://static.wixstatic.com/media/a9ff3b_0f02303a39f04aaab88bb418b8a62cbd.jpg/v1/fill/w_274,h_274,al_c,q_85,usm_0.66_1.00_0.01/a9ff3b_0f02303a39f04aaab88bb418b8a62cbd.webp",

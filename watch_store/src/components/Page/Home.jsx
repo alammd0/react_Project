@@ -5,6 +5,7 @@ import "./Home.css"
 import { NavLink } from 'react-router-dom';
 import HomeCards from '../Home/HomeCards';
 import { homeCards } from '../../data';
+import Footer from '../Footer';
 
 const Home = () => {
 
@@ -45,10 +46,17 @@ const Home = () => {
             <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you</p>
             <button className='over_btn'><NavLink className="hero_btn" to="/shop">Shop Now</NavLink></button>
           </div>
+
+
         </div>
 
         <div className='card_section'>
           <HomeCards homeCards={homeCards} />
+        </div>
+
+
+        <div>
+          <Footer/>
         </div>
 
 
