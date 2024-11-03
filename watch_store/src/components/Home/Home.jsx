@@ -3,7 +3,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'; // Ensure this is imported
 import "./Home.css"
 import { NavLink } from 'react-router-dom';
-import HomeCards from '../Home/HomeCards';
+import HomeCards from './HomeCards';
 import { homeCards } from '../../data';
 import Footer from '../Footer';
 

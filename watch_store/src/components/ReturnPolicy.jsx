@@ -1,6 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ReturnPolicy = () => {
+    const [Question, setQuestion] = useState('')
+
+    function clickHandler(event) {
+        const value = event.target.value; 
+        console.log(value); 
+        setQuestion(value); 
+    }
+
+    function submitHandler(event) {
+        event.preventDefault(); 
+        console.log(Question); 
+    }
+    
+
     return (
         <div className='return_container'>
 
@@ -11,11 +25,16 @@ const ReturnPolicy = () => {
             </div>
 
             <div className='return_left'>
-                <form className='form_data'>
+                <form className='form_data' onSubmit={submitHandler}>
 
                     <input
-                        type='email'
+                        type='text'
                         placeholder='Any Question ?'
+                        required
+                        name='message'
+                        id='message'
+                        value={Question}
+                        onChange={clickHandler}
                     ></input>
 
 

@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
-import Home from "./components/Page/Home"
-import About from "./components/Page/About"
-import Shop from "./components/Page/Shop"
+import Home from "./components/Home/Home"
+import About from "./components/Page/About/About"
+import Shop from "./components/Page/Shop/Shop"
 import Faq from "./components/Page/Faq"
 import Contact from "./components/Page/Contact"
 import Login from "./components/Page/Login"
@@ -28,8 +28,8 @@ function App() {
         return <XtimeSport />
       case "Apollo":
         return <Apollo />
-      default : 
-      return null;
+      default:
+        return null;
     }
   }
 
