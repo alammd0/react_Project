@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./BlackJet.css"
 import { NavLink } from 'react-router-dom';
 import Footer from '../../Footer';
+import ReturnPolicy from '../../ReturnPolicy';
 
 const Details = (props) => {
 
@@ -9,7 +10,9 @@ const Details = (props) => {
 
     console.log(details)
 
-    const [selectColor, setSelectColor] = useState("black");
+    const [selectColor, setSelectColor] = useState("Black");
+
+
 
     const [quantity, setQuantity] = useState(1);
 
@@ -21,6 +24,8 @@ const Details = (props) => {
     function colorChange(color) {
         setSelectColor(color)
     }
+
+
     return (
         <div className="blackjet_wrapper">
             <h2>{details.path}</h2>
@@ -41,11 +46,13 @@ const Details = (props) => {
                     </div>
 
                     <div className='color_picker'>
-                        <p>Color : {selectColor} </p>
+
+                        <p>Color : <span style={{ color: selectColor === "Red" ? 'red' : 'black', 
+                                                        fontSize : '1rem', fontWeight:'700'}}>{selectColor}</span> </p>
 
                         <div className='color'>
-                            <div className='color_red' onClick={() => colorChange("Black")}></div>
-                            <div className='color_black' onClick={() => colorChange("Red")}></div>
+                            <div className='color_red' onClick={() => colorChange("Red")}></div>
+                            <div className='color_black' onClick={() => colorChange("Black")}></div>
                         </div>
                     </div>
 
@@ -77,10 +84,17 @@ const Details = (props) => {
 
             </div>
 
+
+
+
+            <div className='return_Policy'>
+                <ReturnPolicy />
+            </div>
+
             <div style={{
-                marginTop : "1.25rem"
+                marginTop: "1.25rem"
             }}>
-                <Footer/>
+                <Footer />
             </div>
         </div>
     )

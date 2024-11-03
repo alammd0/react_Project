@@ -160,3 +160,11 @@
     border: 2px solid rgb(219, 112, 112);
     transform: scale(1);
 }
+
+
+.return_Policy{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgb(189, 141, 141);
+}
