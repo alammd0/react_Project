@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import "./Card.css"
 
 const Card = (props) => {
     const { homeCard } = props;
@@ -14,8 +15,8 @@ const Card = (props) => {
             onMouseEnter={() => setisHovered(true)}
             onMouseLeave={() => setisHovered(false)}
         >
-            <div className='img'>
-                <img src={homeCard.img} alt='Not available' />
+            <div className='imgs'>
+                <img src={homeCard.img} alt='Not available'  />
             </div>
 
             <div>

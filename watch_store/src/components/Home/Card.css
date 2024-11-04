@@ -1,6 +1,5 @@
 .card_section {
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 1.2rem;
     justify-content: center;
     align-items: center;
@@ -27,7 +26,7 @@
     transform: scale(1.1);
 }
 
-.img img {
+.imgs img {
     width: 100%;
     height: auto;
 }
