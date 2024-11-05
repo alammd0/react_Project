@@ -9,6 +9,7 @@ const XtimeSport = () => {
         desc: "I'm a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.",
         title: "XTIME SPORT",
         code: "SKU: 0008",
+        price: "79.00",
     }
 
 

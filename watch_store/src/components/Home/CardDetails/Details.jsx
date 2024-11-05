@@ -34,8 +34,6 @@ const Details = (props) => {
 
                 <div className='black_product_right'>
                     <img src={details.imgUrl} alt='not' />
-
-
                     <p>{details.desc}</p>
                 </div>
 
@@ -43,6 +41,8 @@ const Details = (props) => {
                     <div className='clack_product_left_heading'>
                         <h3>{details.title}</h3>
                         <p>{details.code}</p>
+
+                        <p>$ {details.price}</p>
                     </div>
 
                     <div className='color_picker'>

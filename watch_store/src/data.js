@@ -53,7 +53,7 @@ export const ShoppingCart = [
 
     {
         imgUrl: "https://images.pexels.com/photos/19810841/pexels-photo-19810841/free-photo-of-top-view-of-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        title: "Wristwatch",
+        title: "Wristwatchs",
         price: "30450",
         path: "/shop/wristwatch"
     },

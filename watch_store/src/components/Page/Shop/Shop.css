@@ -104,7 +104,7 @@
 }
 
 .viewBtn {
-    position: absolute;
+    position: fixed;
     bottom: 75px;
     left: 20px;
 }
@@ -113,14 +113,24 @@
 
 .viewDetail {
     text-decoration: none;
-    color: white;
+    color: rgb(239, 222, 222);
     font-size: 1rem;
+    background-color: rgba(134, 165, 192, 0.5);
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transform: scale(0.9);
+}
+
+.viewDetail:hover{
+    transform: scale(1);
 }
 
 
 .modal_wrapper{
-    position: absolute;
-    top: -11rem;
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -139,10 +149,11 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    padding: 0.75rem;
 }
 
 .cross_btn {
-    background-color: rgb(200, 163, 118);
+    background-color: rgb(240, 205, 161, 0.5);
     width: 6%;
     position: absolute;
     top: 0;   
@@ -157,9 +168,17 @@
 .modal_main_content{
     display: flex;
     padding: 1rem;
+    gap: 30px;
+    align-items: center;
 }
 
 .main_content img{
-    height: 380px;
-    
+    height: 350px;
+    border-radius: 12px;
+}
+
+.main_text_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

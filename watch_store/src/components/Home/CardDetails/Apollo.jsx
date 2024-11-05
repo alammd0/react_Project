@@ -8,6 +8,7 @@ const Apollo = () => {
         desc : "I'm a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.",
         title : "APOLLO",
         code : "SKU: 0006",
+        price: "59.00",
     }
   return (
     <div>

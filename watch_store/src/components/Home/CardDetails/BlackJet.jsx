@@ -9,6 +9,7 @@ const BlackJet = () => {
         desc : "I'm a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.",
         title : "BLACK JET",
         code : "SKU: 0001",
+        price: "79.00"
     }
 
     return (

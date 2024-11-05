@@ -14,6 +14,16 @@ import BlackJet from "./components/Home/CardDetails/BlackJet"
 import Gents from "./components/Home/CardDetails/Gents"
 import XtimeSport from "./components/Home/CardDetails/XtimeSport"
 import Apollo from "./components/Home/CardDetails/Apollo"
+import { ShoppingCart } from "./data"
+import Card1 from "./components/Page/Shop/CardDetails/Card1"
+import Card2 from "./components/Page/Shop/CardDetails/Card2"
+import Card3 from "./components/Page/Shop/CardDetails/Card3"
+import Card4 from "./components/Page/Shop/CardDetails/Card4"
+import Card5 from "./components/Page/Shop/CardDetails/Card5"
+import Card6 from "./components/Page/Shop/CardDetails/Card6"
+import Card7 from "./components/Page/Shop/CardDetails/Card7"
+import Card8 from "./components/Page/Shop/CardDetails/Card8"
+import Card9 from "./components/Page/Shop/CardDetails/Card9"
 
 function App() {
 
@@ -30,6 +40,34 @@ function App() {
         return <Apollo />
       default:
         return null;
+    }
+  }
+
+
+  const getCardDetail = (title) => {
+    switch(title) {
+      case "Rolex Analog" : 
+        return <Card1/>
+      case "Marathon Watch" : 
+        return <Card2 />
+      case "Tissot Watch" : 
+        return <Card3/>
+      case "Wristwatchs" :
+        return <Card4 />
+      case "Round Analog" : 
+        return <Card5 />
+      case "Chronograph Watch" : 
+        return <Card6 /> 
+      case "Wristwatch" : 
+        return <Card7/>
+      case "Chronograph Wristwatch" :
+        return <Card8/>
+      case "Luxurious Dark" : 
+        return <Card9/>
+
+      default : 
+        return null;
+
     }
   }
 
@@ -54,6 +92,13 @@ function App() {
           {homeCards.map((card) => (
             <Route key={card.title} path={card.path} element={getComponent(card.title)} />
           ))}
+
+
+          {
+            ShoppingCart.map((Shopcard) => (
+              <Route key={Shopcard.title} path={Shopcard.path} element={getCardDetail(Shopcard.title)} />
+            ))
+          }
 
         </Routes>
 

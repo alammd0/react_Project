@@ -1,5 +1,4 @@
 import { React, useState } from 'react'
-import { NavLink } from 'react-router-dom';
 import ProductModal from './ProductModal';
 
 const Card = (props) => {
@@ -48,9 +47,6 @@ const Card = (props) => {
 
                                     <div className='viewBtn'>
                                         <button className="viewDetail" onClick={() => openProcuctModal(cardData)}>Quick View</button>
-
-
-
                                     </div>
                                 </div>
 

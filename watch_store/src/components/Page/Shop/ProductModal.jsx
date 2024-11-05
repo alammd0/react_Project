@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom';
 
 const ProductModal = ({ product, onClose }) => {
 
+    console.log(product)
+
     console.log("Modal Data : ", product)
 
     const [selectColor, setSelectColor] = useState("Black");
@@ -23,10 +25,10 @@ const ProductModal = ({ product, onClose }) => {
 
     return (
         <div className='modal_wrapper' >
-            <div className='modal-content' onClick={onClose}>
+            <div className='modal-content' onClick={ (e) => e.stopPropagation()}>
 
                 <div className='cross_btn'>
-                    <span><RxCross2 /></span>
+                    <span onClick={onClose}><RxCross2 /></span>
                 </div>
 
                 <div className='modal_main_content'>
@@ -35,7 +37,8 @@ const ProductModal = ({ product, onClose }) => {
                         <img src={product.imgUrl} alt='Not Image' />
                     </div>
 
-                    <div>
+                    <div className='main_text_content'>
+
                         <div>
                             <h2>{product.title}</h2>
                             <p>$ {product.price}</p>
@@ -72,7 +75,6 @@ const ProductModal = ({ product, onClose }) => {
                         <div className='black_btn'>
                             <NavLink to="/cart" className="btn" >Add Cart</NavLink>
                         </div>
-
 
                         <div>
                             <NavLink to = {product.path}>View Detail</NavLink>
