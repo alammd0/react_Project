@@ -3,7 +3,7 @@ import Home from "./components/Home/Home"
 import About from "./components/Page/About/About"
 import Shop from "./components/Page/Shop/Shop"
 import Faq from "./components/Page/Faq"
-import Contact from "./components/Page/Contact"
+import Contact from "./components/Page/Contact/Contact"
 import Login from "./components/Page/Login"
 import Cart from "./components/Page/Cart"
 import NavBar from "./components/NavBar"
@@ -49,7 +49,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cart />} />
-
           <Route path="/signup" element={<SignUp />} />
 
           {homeCards.map((card) => (

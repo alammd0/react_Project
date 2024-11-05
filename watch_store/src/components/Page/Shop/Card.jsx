@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
 import { NavLink } from 'react-router-dom';
+import ProductModal from './ProductModal';
 
 const Card = (props) => {
 
@@ -7,6 +8,17 @@ const Card = (props) => {
     console.log(cardData);
 
     const [ishover, setisHovered] = useState(false);
+
+
+    const [selectProduct, setSelectProduct] = useState(null);
+
+    const openProcuctModal = (product) => {
+        setSelectProduct(product);
+    }
+
+    const closeProcuctModal = () => {
+        setSelectProduct(null);
+    }
 
     return (
         <div>
@@ -35,7 +47,10 @@ const Card = (props) => {
                                     <button className='product_card'>Add Cart</button>
 
                                     <div className='viewBtn'>
-                                        <NavLink className="viewDetail" to={cardData.path} >View Detail</NavLink>
+                                        <button className="viewDetail" onClick={() => openProcuctModal(cardData)}>Quick View</button>
+
+
+
                                     </div>
                                 </div>
 
@@ -45,6 +60,18 @@ const Card = (props) => {
                     </div>
                 </div>
             </div>
+
+
+            {/* Conditionally render the modal outside of the button */}
+            <div>
+                {selectProduct && (
+                    <ProductModal
+                        product={selectProduct}
+                        onClose={closeProcuctModal}
+                    />
+                )}
+            </div>
+
         </div>
     )
 }

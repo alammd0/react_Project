@@ -1,5 +1,6 @@
 .shop_card {
     background-color: rgb(202, 247, 247);
+    position: relative;
 }
 
 /* shop.jsx */
@@ -114,4 +115,51 @@
     text-decoration: none;
     color: white;
     font-size: 1rem;
+}
+
+
+.modal_wrapper{
+    position: absolute;
+    top: -11rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content{
+    background: white;
+    width: 680px;
+    max-width: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cross_btn {
+    background-color: rgb(200, 163, 118);
+    width: 6%;
+    position: absolute;
+    top: 0;   
+    right: 0;  
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal_main_content{
+    display: flex;
+    padding: 1rem;
+}
+
+.main_content img{
+    height: 380px;
+    
 }

@@ -47,8 +47,10 @@ const Details = (props) => {
 
                     <div className='color_picker'>
 
-                        <p>Color : <span style={{ color: selectColor === "Red" ? 'red' : 'black', 
-                                                        fontSize : '1rem', fontWeight:'700'}}>{selectColor}</span> </p>
+                        <p>Color : <span style={{
+                            color: selectColor === "Red" ? 'red' : 'black',
+                            fontSize: '1rem', fontWeight: '700'
+                        }}>{selectColor}</span> </p>
 
                         <div className='color'>
                             <div className='color_red' onClick={() => colorChange("Red")}></div>
