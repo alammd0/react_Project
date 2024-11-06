@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { RxCross2 } from "react-icons/rx";
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { UpdateCartproduct } from '../../ContextApi/UpdateCartproduction';
 
 const ProductModal = ({ product, onClose }) => {
 
-    console.log(product)
+    // console.log(product)
 
-    console.log("Modal Data : ", product)
+
+    const {addCart} = useContext(UpdateCartproduct);
+
+    console.log("Modal Data : ", product.imgUrl)
 
     const [selectColor, setSelectColor] = useState("Black");
 
@@ -73,7 +77,7 @@ const ProductModal = ({ product, onClose }) => {
                         </div>
 
                         <div className='black_btn'>
-                            <NavLink to="/cart" className="btn" >Add Cart</NavLink>
+                            <NavLink to="/cart" onClick={() => addCart({...product, quantity})} className="btn" >Add Cart</NavLink>
                         </div>
 
                         <div>

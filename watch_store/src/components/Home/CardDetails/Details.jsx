@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./BlackJet.css"
 import { NavLink } from 'react-router-dom';
 import Footer from '../../Footer';
 import ReturnPolicy from '../../ReturnPolicy';
+import { UpdateCartproduct } from '../../ContextApi/UpdateCartproduction';
 
 const Details = (props) => {
+
+    const {addCart} = useContext(UpdateCartproduct)
 
     const details = props.details;
 
@@ -75,7 +78,7 @@ const Details = (props) => {
                     </div>
 
                     <div className='black_btn'>
-                        <NavLink to="/cart" className="btn" >Add Cart</NavLink>
+                        <NavLink to="/cart" onClick={ () => addCart(details)} className="btn" >Add Cart</NavLink>
                     </div>
 
                     <div className='product_info'>

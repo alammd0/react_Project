@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 const ReturnPolicy = () => {
     const [Question, setQuestion] = useState('')
 
+    
+
     function clickHandler(event) {
         const value = event.target.value; 
         console.log(value); 

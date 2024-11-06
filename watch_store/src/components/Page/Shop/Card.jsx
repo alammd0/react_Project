@@ -1,10 +1,13 @@
-import { React, useState } from 'react'
+import { React, useContext, useState } from 'react'
 import ProductModal from './ProductModal';
+import { NavLink } from 'react-router-dom';
+import { UpdateCartproduct } from '../../ContextApi/UpdateCartproduction';
 
 const Card = (props) => {
 
     const cardData = props.cardData;
-    console.log(cardData);
+
+    const { addCart } = useContext(UpdateCartproduct)
 
     const [ishover, setisHovered] = useState(false);
 
@@ -43,10 +46,9 @@ const Card = (props) => {
                         {
                             ishover && (
                                 <div>
-                                    <button className='product_card'>Add Cart</button>
-
                                     <div className='viewBtn'>
-                                        <button className="viewDetail" onClick={() => openProcuctModal(cardData)}>Quick View</button>
+                                        <button className="viewDetail" onClick={() => openProcuctModal(cardData)}
+                                        >Quick View</button>
                                     </div>
                                 </div>
 

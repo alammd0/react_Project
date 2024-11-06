@@ -24,6 +24,7 @@ import Card6 from "./components/Page/Shop/CardDetails/Card6"
 import Card7 from "./components/Page/Shop/CardDetails/Card7"
 import Card8 from "./components/Page/Shop/CardDetails/Card8"
 import Card9 from "./components/Page/Shop/CardDetails/Card9"
+import { UpdateProvider } from "./components/ContextApi/UpdateCartproduction"
 
 function App() {
 
@@ -45,27 +46,27 @@ function App() {
 
 
   const getCardDetail = (title) => {
-    switch(title) {
-      case "Rolex Analog" : 
-        return <Card1/>
-      case "Marathon Watch" : 
+    switch (title) {
+      case "Rolex Analog":
+        return <Card1 />
+      case "Marathon Watch":
         return <Card2 />
-      case "Tissot Watch" : 
-        return <Card3/>
-      case "Wristwatchs" :
+      case "Tissot Watch":
+        return <Card3 />
+      case "Wristwatchs":
         return <Card4 />
-      case "Round Analog" : 
+      case "Round Analog":
         return <Card5 />
-      case "Chronograph Watch" : 
-        return <Card6 /> 
-      case "Wristwatch" : 
-        return <Card7/>
-      case "Chronograph Wristwatch" :
-        return <Card8/>
-      case "Luxurious Dark" : 
-        return <Card9/>
+      case "Chronograph Watch":
+        return <Card6 />
+      case "Wristwatch":
+        return <Card7 />
+      case "Chronograph Wristwatch":
+        return <Card8 />
+      case "Luxurious Dark":
+        return <Card9 />
 
-      default : 
+      default:
         return null;
 
     }
@@ -73,36 +74,43 @@ function App() {
 
   return (
     <>
-      <div className="wrapper">
+      {/* <UpdateProvider> */}
 
-        <div>
-          <NavBar />
+        <div className="wrapper">
+
+          <div>
+            <NavBar />
+          </div>
+
+          <Routes>
+            <Route path="/" element={<Home
+            />} />
+            <Route path="/shop" element={<Shop
+
+            />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/signup" element={<SignUp />} />
+
+            {homeCards.map((card) => (
+              <Route key={card.title} path={card.path} element={getComponent(card.title)} />
+            ))}
+
+
+            {
+              ShoppingCart.map((Shopcard) => (
+                <Route key={Shopcard.title} path={Shopcard.path} element={getCardDetail(Shopcard.title)} />
+              ))
+            }
+
+          </Routes>
+
         </div>
+      {/* </UpdateProvider> */}
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/signup" element={<SignUp />} />
-
-          {homeCards.map((card) => (
-            <Route key={card.title} path={card.path} element={getComponent(card.title)} />
-          ))}
-
-
-          {
-            ShoppingCart.map((Shopcard) => (
-              <Route key={Shopcard.title} path={Shopcard.path} element={getCardDetail(Shopcard.title)} />
-            ))
-          }
-
-        </Routes>
-
-      </div>
     </>
   )
 }
