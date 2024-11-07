@@ -141,9 +141,6 @@
 
 .icon_1{
     color: white;
-    border: 2px solid white;
-    padding: 0.5rem 1rem;
-    border-radius: 24px;
     font-size: 1.25rem;
     display: flex;
     transition: all 1s;
@@ -154,4 +151,14 @@
     color: #F3C13A;
     border-color: #F3C13A;
     transform: scale(1);
+}
+
+
+@media screen and (max-width:769px) {
+    .contact_content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }

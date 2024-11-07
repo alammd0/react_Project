@@ -37,9 +37,9 @@ const ImageCont = () => {
         },
         {
             imgScr: Image,
-            link: "https://github.com/alammd0/ImageGallery/tree/main/Image-gallary",
-            title: "Image Gallery",
-            desc: "Uses HTML and CSS"
+            link: "https://github.com/alammd0/react_Project/tree/main/watch_store",
+            title: "Watch Store",
+            desc:"Using React, Context API and CSS"
         },
         {
             imgScr: Game,

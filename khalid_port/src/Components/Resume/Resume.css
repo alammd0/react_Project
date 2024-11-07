@@ -98,3 +98,13 @@
     font-size: 1.15rem;
     padding-top: 1rem 0;
 }
+
+
+@media screen and (max-width:768px) {
+    .resume_content_container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}

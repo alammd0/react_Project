@@ -14,6 +14,7 @@ const About = () => {
                 </div>
 
                 <div className='info_container'>
+                
                     <div className='info_img'>
                         <img src={About_img} alt="No Image" />
                     </div>
@@ -36,16 +37,16 @@ const About = () => {
 
                         <div className='some_inf'>
 
-                            <p><span>Phone</span> : +91 95 07 22 22 22</p>
+                            <p><span>Phone</span> : +91-9507283573</p>
 
                             <p><span>Email</span> : mdkhalid001@gmail.com</p>
-                            <p><span>From</span> : Motihari, Bihar - 845435, India</p>
+                            <p><span>From</span> : Noida, UP - 201303, India</p>
                             <p><span>Language</span> : Hindi, English, Urdu</p>
                             <p><span>Freelance</span> : Available</p>
 
                         </div>
                         <div className='btn'>
-                            <button>Download CV</button>
+                            <button >Download CV</button>
                         </div>
                     </div>
                 </div>

@@ -2,10 +2,11 @@ import React from 'react'
 import { IoLocation } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { NavLink } from 'react-router-dom';
 
 const ContactInfo = () => {
     return (
@@ -49,21 +50,15 @@ const ContactInfo = () => {
             <div className='social-icons'>
                 <h3>Visite my social profile and get connected</h3>
 
-                <div className='social_icon'>
-                    {/* icon - 1 (linkedin) */}
-                    <a href='https://www.linkedin.com/in/md-khalid-alam-3307b4219/' target='_blank' className='icon_1'><FaLinkedin /></a>
-                    {/* icon - 2 (Intagram) */}
-                    <a className='icon_1'><FaInstagramSquare /></a>
-                    {/* icon - 2 (Youtube) */}
-                    <a className='icon_1'><IoLogoYoutube /></a>
-                    {/* icon - 2 (Twitter) */}
-                    <a className='icon_1'>
-                        <FaXTwitter />
-                    </a>
-                </div>
-
-
+                <div  className='social_icon'>
+                    <NavLink className="icon_1" to="https://www.linkedin.com/in/md-khalid-alam-3307b4219/" target='_blank'><FaLinkedinIn /></NavLink>
+                    <NavLink className="icon_1" to="https://www.instagram.com/bitcoding01/profilecard/?igsh=cXNhNmQ1bGRvNnU2" target='_blank'><FaInstagram /></NavLink>
+                    <NavLink className="icon_1" to="https://github.com/alammd0" target='_blank'><FaGithub /></NavLink>
+                    <NavLink className="icon_1" to="https://www.youtube.com/@BitCoDing-u5y"><IoLogoYoutube /></NavLink>
             </div>
+
+
+        </div>
 
         </div >
     )

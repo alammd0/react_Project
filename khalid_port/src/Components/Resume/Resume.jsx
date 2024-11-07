@@ -51,6 +51,7 @@ const Resume = () => {
                 </div>
 
                 <div className='resume_content_container'>
+                    
                     <div className='education_container'>
                         <div className='heaading'>
                             <img src={icon2} alt='not' />

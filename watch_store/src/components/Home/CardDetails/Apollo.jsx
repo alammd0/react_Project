@@ -12,7 +12,7 @@ const Apollo = () => {
     }
   return (
     <div>
-        <Details details = {details}
+        <Details details = {details}cd 
         />
     </div>
   )

@@ -7,6 +7,8 @@ import { FaGithub } from "react-icons/fa6";
 import $ from "jquery"
 import "jquery.ripples"
 import Alam from "../../assets/Alam.jpg"
+import { NavLink } from 'react-router-dom';
+import { IoLogoYoutube } from "react-icons/io5";
 
 
 const Home = () => {
@@ -40,9 +42,10 @@ const Home = () => {
                     </div>
 
                     <div className='home_icons'>
-                        <span><FaLinkedinIn /></span>
-                        <span><FaInstagram /></span>
-                        <span><FaGithub /></span>
+                        <NavLink to="https://www.linkedin.com/in/md-khalid-alam-3307b4219/" target='_blank'><FaLinkedinIn /></NavLink>
+                        <NavLink to= "https://www.instagram.com/bitcoding01/profilecard/?igsh=cXNhNmQ1bGRvNnU2" target='_blank'><FaInstagram /></NavLink>
+                        <NavLink to="https://github.com/alammd0" target='_blank'><FaGithub /></NavLink>
+                        <NavLink to="https://www.youtube.com/@BitCoDing-u5y"><IoLogoYoutube /></NavLink>
                     </div>
 
                 </div>

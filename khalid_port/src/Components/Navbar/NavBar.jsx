@@ -56,8 +56,10 @@ const NavBar = () => {
               </NavLink>
 
               <div className='call'>
-                <IoIosCall className='icon' />
-                <p>+91-95072-83573</p>
+
+                <a href="tel:+919507283573">
+                  <IoIosCall className='icon' /> <p>+91-9507283573</p>
+                </a>
               </div>
             </ul>
 

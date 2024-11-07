@@ -13,15 +13,15 @@ const Shop = () => {
           <h2>SHOP</h2>
         </div>
         <div>
-          <Cards ShoppingCart={ShoppingCart} 
-             
+          <Cards ShoppingCart={ShoppingCart}
+
           />
         </div>
       </div>
 
       <div className='footerSection'>
-          <Footer/>
-        </div>
+        <Footer />
+      </div>
     </div>
   )
 }

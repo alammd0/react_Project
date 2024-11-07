@@ -21,51 +21,51 @@
 
 .lang_skills {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-evenly;
+    flex-wrap: wrap; 
 }
 
-.lang_container {
-    border: 2px solid #596d9c;
-    max-width: 40%;
+
+.skill-container {
+    
+    max-width: 400px;
     width: 100%;
-    padding: 1.5rem 3rem;
-    border-radius: 12px;
-    background-color: #0A101E;
-}
-
-.lang_container h2{
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-}
-
-.language {
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    padding-top: 1rem;
-}
-
-.programming{
-    border: 2px solid #eea5eb7b;
-    padding: 0.5rem 1rem;
-    border-radius: 12px;
-    font-size: 1.15rem;
-    font-weight: 400;
-    transform: scale(0.9);
-    transition: all 0.5s;
-}
-
-
-
-.programming:hover{
-    transform: scale(1);
-    background-color: #F3C13A;
-    color: black;
+    flex-direction: column;
+    gap:10px;
+  }
+  
+  .skill {
+    margin: 10px 0;
+    color: white;
+  }
+  
+  .skill-name {
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-align: left;
+  }
+  
+  .skill-bar {
+    background-color: #2b2b2b;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-level {
+    background-color: #e9cb51;
+    height: 10px;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 5px;
+    color: rgb(238, 119, 119);
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+.skils_heading{
+    margin-top: 1.25rem;
+    padding: 0.75rem;
+    border: 1px dashed #eedb6c;
+    border-radius: 8px;
 }

@@ -5,35 +5,32 @@ import "./Skill.css"
 const Skill = () => {
 
   let programLan = [
-    { name: "Java" },
-    { name: "Python" },
-    { name: "C" },
-    { name: "C++" },
-    { name: "JavaScript" },
+    { name: "Java", level: 80 },
+    { name: "Python", level: 50 },
+    { name: "C", level: 75 },
+    { name: "C++", level: 65 },
+    { name: "JavaScript", level: 80 },
   ];
 
   let DevlopLan = [
-    { name: "HTML" },
-    { name: "CSS" },
-    { name: "TailWind CSS" },
-    { name: "JavaScript" },
-    { name: "React Js" },
-    { name: "Express Js" },
-    { name: "Node Js" },
-    { name: "PostMan" },
+    { name: "HTML", level: 90 },
+    { name: "CSS", level: 80 },
+    { name: "TailWind CSS", level: 85 },
+    { name: "JavaScript", level: 79 },
+    { name: "React Js", level: 67 },
   ];
 
   let DataBase = [
-    { name: "MongoDB" },
-    { name: "SQL" }
+    { name: "MongoDB", level: 40 },
+    { name: "SQL", level: 30 }
   ];
 
   let coreSubj = [
-    { name: "DSA" },
-    { name: "OOP" },
-    { name: "OS" },
-    { name: "DBMS" },
-    { name: "NETWORKING" }
+    { name: "DSA", level: 50 },
+    { name: "OOP", level: 70 },
+    { name: "OS", level: 50 },
+    { name: "DBMS", level: 20 },
+    { name: "NETWORKING", level: 20 }
   ]
 
   return (
@@ -49,50 +46,77 @@ const Skill = () => {
 
         <div className='lang_skills'>
 
-          <div className='lang_container'>
-            <h2>Programming Language</h2>
+          <div className="skill-container">
+            <h2 className='skils_heading'>Programming Language</h2>
 
-            <div className='language'>
-              {
-                programLan.map((lan) => (
-                  <div className='programming'>{lan.name}</div>
-                ))
-              }
+            <div>
+              {programLan.map((skill, index) => (
+                <div className="skill" key={index}>
+                  <div className="skill-name">{skill.name}</div>
+                  <div className="skill-bar">
+                    <div className="skill-level" style={{ width: `${skill.level}%` }}>
+                    </div>
+                    <div>{skill.level}%</div>
+                  </div>
+                </div>
+              ))}
             </div>
+
           </div>
 
-          <div className='lang_container'>
-            <h2>Development Language</h2>
+          <div className="skill-container">
+            <h2 className='skils_heading' >Web Devlopment Language</h2>
 
-            <div className='language'>
-              {
-                DevlopLan.map ( (lan) => (
-                  <div className='programming'>{lan.name}</div>
-                ))
-              }
+            <div>
+              {DevlopLan.map((skill, index) => (
+                <div className="skill" key={index}>
+                  <div className="skill-name">{skill.name}</div>
+                  <div className="skill-bar">
+                    <div className="skill-level" style={{ width: `${skill.level}%` }}>
+                    </div>
+                    <div>{skill.level}%</div>
+                  </div>
+                </div>
+              ))}
             </div>
+
           </div>
 
-          <div className='lang_container'>
-            <h2>Data Base Language</h2>
-            <div className='language'>
-              {
-                DataBase.map ( (data) => (
-                  <div className='programming'>{data.name}</div>
-                ))
-              }
+
+          <div className="skill-container">
+            <h2 className='skils_heading' >Core Subject</h2>
+
+            <div>
+              {coreSubj.map((skill, index) => (
+                <div className="skill" key={index}>
+                  <div className="skill-name">{skill.name}</div>
+                  <div className="skill-bar">
+                    <div className="skill-level" style={{ width: `${skill.level}%` }}>
+                    </div>
+                    <div>{skill.level}%</div>
+                  </div>
+                </div>
+              ))}
             </div>
+
           </div>
 
-          <div className='lang_container'>
-            <h2>Core Subject</h2>
-            <div className='language' >
-              {
-                coreSubj.map( (subject) => (
-                  <div className='programming'>{subject.name}</div>
-                ))
-              }
+          <div className="skill-container">
+            <h2 className='skils_heading'>Data Base</h2>
+
+            <div>
+              {DataBase.map((skill, index) => (
+                <div className="skill" key={index}>
+                  <div className="skill-name">{skill.name}</div>
+                  <div className="skill-bar">
+                    <div className="skill-level" style={{ width: `${skill.level}%` }}>
+                    </div>
+                    <div>{skill.level}%</div>
+                  </div>
+                </div>
+              ))}
             </div>
+
           </div>
 
         </div>
