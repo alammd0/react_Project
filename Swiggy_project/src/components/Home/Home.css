@@ -1,0 +1,58 @@
+.home_Container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 1.25rem;
+}
+
+
+.image_container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.click_btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.click_btn button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(67, 19, 19);
+}
+
+
+.slide {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.slide img {
+    border-radius: 8px;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.slide.inactive {
+    opacity: 0;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useContext} from 'react'
 import { NavLink } from 'react-router-dom'
 import { CiSearch } from "react-icons/ci";
 import { BiSolidOffer } from "react-icons/bi";
@@ -9,16 +9,11 @@ import { TiThMenu } from "react-icons/ti";
 import { IoMdHome } from "react-icons/io";
 import { TiThMenuOutline } from "react-icons/ti";
 import "./NavBar.css"
+import { functionProviderSwiggy } from '../Context/SwiggyContext';
 
 const NavBar = () => {
 
-    const [isMenu, setIsmenu] = useState(false);
-
-
-    function clickHandler() {
-        setIsmenu(!isMenu);
-    }
-
+    const {clickHandler, isMenu} = useContext(functionProviderSwiggy);
 
     return (
         <div className='navBar_wrapper'>
@@ -76,10 +71,10 @@ const NavBar = () => {
                 </div>
 
                 <div className='toggle' onClick={clickHandler}>
-                {
-                    !isMenu ? (<TiThMenu />) : (<TiThMenuOutline />)
-                }
-                    
+                    {
+                        !isMenu ? (<TiThMenu />) : (<TiThMenuOutline />)
+                    }
+
                 </div>
             </div>
         </div>
