@@ -1,38 +1,31 @@
-import { useState, createContext, useEffect } from "react";
-import { mindData } from "../../data";
+import { useState, createContext} from "react";
+import { useRef } from "react";
 
 export const functionProviderSwiggy = createContext();
 
 export const SwiggyFunctionProvider = ({ children }) => {
     const [isMenu, setIsmenu] = useState(false);
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const interval = 3000;
-
+    const carouselRef = useRef(null);
 
     function clickHandler() {
         setIsmenu(!isMenu);
     }
 
-    const nextSlideImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % mindData.length)
-    }
+    const scrollLeft = () => {
+        carouselRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+    };
 
-    const prevSlideImage = () => {
-        setCurrentIndex((prevIndex) => prevIndex === 0 ? mindData.length - 1 : prevIndex - 1);
-    }
-
-    useEffect(() => {
-        const slideInterval = setInterval(nextSlideImage, interval);
-        return () => clearInterval(slideInterval);
-    }, [nextSlideImage, interval]);
+    const scrollRight = () => {
+        carouselRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+    };
 
 
     const values = {
         isMenu,
         clickHandler,
-        currentIndex,
-        nextSlideImage,
-        prevSlideImage
+        scrollLeft,
+        scrollRight,
+        carouselRef
     }
 
     return (

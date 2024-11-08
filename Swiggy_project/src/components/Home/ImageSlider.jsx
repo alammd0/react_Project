@@ -1,38 +1,36 @@
 import React, { useContext } from 'react'
-import { functionProviderSwiggy } from '../Context/SwiggyContext'
 import { mindData } from '../../data';
-import { FcNext, FcPrevious } from "react-icons/fc";
+import { functionProviderSwiggy } from '../Context/SwiggyContext';
+import { GrFormNextLink } from "react-icons/gr";
+import { GrFormPreviousLink } from "react-icons/gr"
 
 const ImageSlider = () => {
 
-    const { currentIndex,
-        nextSlideImage,
-        prevSlideImage } = useContext(functionProviderSwiggy);
+    const { scrollLeft, scrollRight, carouselRef } = useContext(functionProviderSwiggy);
 
     return (
-        <div>
-            <div className='heading'>
-                <div>
-                    <h2>What's on your mind?</h2>
+        <div className="food-carousel">
+            <div className='heading_scroll'>
+                <div> <h2>What's on your mind?</h2></div>
+                <div className='res_btn'>
+                    <button className='arrow' onClick={scrollLeft}><GrFormPreviousLink /> </button>
+                    <button className='arrow' onClick={scrollRight}><GrFormNextLink /></button>
                 </div>
 
-                <div className='click_btn'>
-                    <button onClick={nextSlideImage}><FcNext /></button>
-                    <button onClick={prevSlideImage}><FcPrevious /></button>
-                </div>
             </div>
-            <div className='image_container'>
-                {
-                    mindData.map((Image, index) => (
-                        <div key={index}>
-                            <img src={Image.image} alt="not Available" />
-                        </div>
 
-                    ))
-                }
+            <div className="carousel-container">
+
+                <div className="items" ref={carouselRef}>
+                    {mindData.map((item, index) => (
+                        <div className="item" key={index}>
+                            <img src={item.image} alt="Alam" />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default ImageSlider

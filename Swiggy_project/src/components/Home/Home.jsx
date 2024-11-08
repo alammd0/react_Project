@@ -1,6 +1,7 @@
 import React from 'react'
 import ImageSlider from './ImageSlider'
 import "./Home.css"
+import ResturentSlider from './ResturentSlider'
 
 const Home = () => {
   return (
@@ -9,6 +10,10 @@ const Home = () => {
             <div>
                 <ImageSlider/>               
             </div> 
+
+            <div>
+              <ResturentSlider/>
+            </div>
         </div>
     </div>
   )
