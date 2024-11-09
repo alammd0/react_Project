@@ -1,5 +1,5 @@
 import React from 'react'
-import { nearme } from '../../data'
+import { nearme } from '../../Data/data'
 
 const NearMe = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { bestPlaces } from '../../data'
+import { bestPlaces } from '../../Data/data'
 
 const BestPlaces = () => {
   return (

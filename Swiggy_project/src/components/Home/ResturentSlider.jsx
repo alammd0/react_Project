@@ -1,5 +1,5 @@
 import React from 'react'
-import { resurentImage } from '../../data'
+import { resurentImage } from '../../Data/data'
 import { FaRegStar } from "react-icons/fa";
 import { useContext } from 'react';
 import { functionProviderSwiggy } from '../Context/SwiggyContext';

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { mindData } from '../../data';
+import { mindData } from '../../Data/data';
 import { functionProviderSwiggy } from '../Context/SwiggyContext';
 import { GrFormNextLink } from "react-icons/gr";
 import { GrFormPreviousLink } from "react-icons/gr"

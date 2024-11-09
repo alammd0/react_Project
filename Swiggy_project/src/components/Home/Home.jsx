@@ -5,11 +5,14 @@ import ResturentSlider from './ResturentSlider'
 import TopRest from './TopRest'
 import BestPlaces from './BestPlaces'
 import NearMe from './NearMe'
+import Footer from '../Footer/Footer'
 
 const Home = () => {
   return (
     <div>
+
       <div className='home_Container'>
+
         <div className='imageSlider_wrapper'>
           <ImageSlider />
         </div>
@@ -26,9 +29,14 @@ const Home = () => {
           <BestPlaces />
         </div>
 
-        <div className='imageSlider_wrapper'>
+        <div className='near_wrapper'>
           <NearMe />
         </div>
+
+      </div>
+
+      <div>
+          <Footer/>
       </div>
     </div>
   )

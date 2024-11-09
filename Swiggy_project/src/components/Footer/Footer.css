@@ -1,0 +1,37 @@
+.footer_Wrapper{
+    background-color: #F0F0F5;
+    padding: 2rem;
+}
+
+.footer_container{
+    max-width: 1050px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.footer_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading_content h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.image_container{
+    display: flex;
+    gap: 10px;
+}
+
+.images{
+    height: 50px;
+}
+
+.images img{
+    height: 100%;
+    object-fit: cover; 
+    background-size: cover; 
+}

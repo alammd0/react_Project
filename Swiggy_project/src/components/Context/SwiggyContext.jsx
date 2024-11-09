@@ -1,6 +1,6 @@
 import { useState, createContext} from "react";
 import { useRef } from "react";
-import { foodDelivery } from "../../data";
+import { foodDelivery } from "../../Data/data";
 
 export const functionProviderSwiggy = createContext();
 
