@@ -1,5 +1,6 @@
 import { useState, createContext} from "react";
 import { useRef } from "react";
+import { foodDelivery } from "../../data";
 
 export const functionProviderSwiggy = createContext();
 
@@ -25,7 +26,8 @@ export const SwiggyFunctionProvider = ({ children }) => {
         clickHandler,
         scrollLeft,
         scrollRight,
-        carouselRef
+        carouselRef,
+        foodDelivery
     }
 
     return (

@@ -11,7 +11,7 @@ const ResturentSlider = () => {
     console.log(resurentImage);
 
 
-    const {scrollLeft, scrollRight, carouselRef} = useContext(functionProviderSwiggy);
+    const { scrollLeft, scrollRight, carouselRef } = useContext(functionProviderSwiggy);
 
     return (
         <div>
@@ -21,7 +21,7 @@ const ResturentSlider = () => {
 
                     <div className='res_btn'>
                         <button className='arrow' onClick={scrollLeft}><GrFormPreviousLink /> </button>
-                        <button className='arrow'  onClick={scrollRight}><GrFormNextLink /></button>
+                        <button className='arrow' onClick={scrollRight}><GrFormNextLink /></button>
                     </div>
                 </div>
 
