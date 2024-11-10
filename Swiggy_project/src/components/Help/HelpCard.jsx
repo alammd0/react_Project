@@ -1,14 +1,12 @@
 import React from 'react'
 import HelpNavFilter from './HelpNavFilter'
-import PartnerOnboard from './FilterDataInfo/PartnerOnboard'
+import PartnerOnboard from './PartnerOnboard'
 
 const HelpCard = () => {
     return (
         <div>
             <div>
-                <div>
-                    <HelpNavFilter />
-                </div>
+                <HelpNavFilter />
             </div>
         </div>
     )

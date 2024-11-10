@@ -1,0 +1,101 @@
+.help_wrapper{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.help_container{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.help_heading h3{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.help_container p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.help_data_container{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.filter_data{
+    display: flex;
+    flex-direction: column;
+    background-color: #00ffff;
+    border-radius: 12px;
+    height: 380px;
+    width: 300px    ;
+    padding: 1.5rem;
+    justify-content: space-around;
+    margin-top: 1.35rem;
+}
+
+
+.filter_btn_nonclick{
+    border: none;
+    background-color: aqua;
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.filter_btn_click{
+    background-color: rgba(17, 174, 167, 0.5);
+    border: 2px solid rgb(228, 149, 149, 0.5);
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    border-radius: 12px;   
+}
+
+.drop_text_container{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.drop_heading_btn{
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(170, 56, 56, 0.5);
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+
+.drop_item{
+    background-color: rgb(170, 56, 56, 0.5);
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    line-height: 1.6;
+    list-style-type: square;
+    border-radius: 12px;
+}
+
+.drop_item li{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.heading_h h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+}

@@ -8,7 +8,6 @@ export const SwiggyFunctionProvider = ({ children }) => {
     const [isMenu, setIsmenu] = useState(false);
     const carouselRef = useRef(null);
     const [isOpen, setIsOpen] = useState(null);
-
     const [selectCategories, setSelectCategories] = useState("Partner Onboarding");
 
 

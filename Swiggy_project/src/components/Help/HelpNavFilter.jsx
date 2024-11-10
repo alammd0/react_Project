@@ -1,35 +1,37 @@
 import React, { useContext } from 'react'
-import { filterData } from '../../Data/HelpData'
+import { filterData } from '../../Data/HelpData';
 import { functionProviderSwiggy } from '../Context/SwiggyContext'
-import PartnerOnboard from './FilterDataInfo/PartnerOnboard';
+import PartnerOnboard from './PartnerOnboard';
 
 const HelpNavFilter = () => {
 
-    const {handleCategory, selectCategories} = useContext(functionProviderSwiggy);
+    const { handleCategory, selectCategories } = useContext(functionProviderSwiggy);
 
     console.log(selectCategories);
 
-  return (
-    <div>
-        <div>
-            {
-                filterData.map( (data) => (
-                    <button key={data.id} onClick={ () => handleCategory(data.head)}>
-                        {data.head}
-                    </button>
-                ))
-            }
+    return (
+        <div className='help_data_container'>
+
+            <div className='filter_data'>
+                {
+                    filterData.map((data) => (
+                        <button className={selectCategories === data.head ? 'filter_btn_click' : 'filter_btn_nonclick'} key={data.id} onClick={() => handleCategory(data.head)}>
+                            {data.head}
+                        </button>
+                    ))
+                }
+            </div>
+
+            <div>
+                {
+                    selectCategories && (
+                        <PartnerOnboard categories={selectCategories} />
+                    )
+                }
+            </div>
+
         </div>
-
-        {
-            selectCategories && (
-                <PartnerOnboard categories = {selectCategories}/>
-             )
-        }
-
-
-    </div>
-  )
+    )
 }
 
 export default HelpNavFilter
