@@ -5,11 +5,11 @@ import { NavLink } from 'react-router-dom'
 const FootCompany = () => {
   return (
     <div>
-        <div>
+        <div className="footer_text_link">
             {
                 aboutData.map( (company) => (
-                    <div key={company.id}>
-                        <NavLink to="">{company.company}</NavLink>
+                    <div key={company.id} className='link_text'>
+                        <NavLink to="" className="text_link">{company.company}</NavLink>
                     </div>
                 ))
             }
