@@ -11,8 +11,8 @@ const NearMe = () => {
 
                 <div className='best_city'>
                     {
-                        nearme.map((location) => (
-                            <div key={location.id} className='city_container'>
+                        nearme.map((location, index) => (
+                            <div key={index} className='city_container'>
                                 <button className='city_txt'>{location.location}</button>
                             </div>
                         ))

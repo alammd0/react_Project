@@ -9,6 +9,34 @@ export const SwiggyFunctionProvider = ({ children }) => {
     const carouselRef = useRef(null);
     const [isOpen, setIsOpen] = useState(null);
     const [selectCategories, setSelectCategories] = useState("Partner Onboarding");
+    const [openModal, setOpenModal] = useState(null);
+
+    const [formData, setFormData] = useState({
+        phoneNumber : "",
+        email : "",
+        name : ""
+    })
+    
+    const signLoginHandler = (event) => {
+        // setFormData(event.target.value)
+
+        const{name , value} = event.target;
+
+        setFormData( (prevData) => ({
+            ...prevData,
+            [name] : value
+        }));
+        
+        console.log(event.target.value)
+    }
+
+    const openSignLoginModal = (page) => {
+        setOpenModal(page);
+    }
+
+    const closeSignLoginModal = (page) => {
+        setOpenModal(null);
+    }
 
 
     const handleCategory = (head) => {
@@ -44,6 +72,13 @@ export const SwiggyFunctionProvider = ({ children }) => {
         clickDropdown,
         selectCategories,
         handleCategory,
+        openModal,
+        setOpenModal,
+        openSignLoginModal,
+        closeSignLoginModal,
+        formData,
+        setFormData,
+        signLoginHandler
     }
 
     return (

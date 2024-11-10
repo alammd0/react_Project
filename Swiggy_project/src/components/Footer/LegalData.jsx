@@ -7,8 +7,8 @@ const LegalData = () => {
     <div>
       <div className='footer_text_link'>
         {
-          legalData.map((legal) => (
-            <div key={legal.key} className='link_text'>
+          legalData.map((legal, index) => (
+            <div key={index} className='link_text'>
               <NavLink to="" className='text_link'>{legal.legal}</NavLink>
             </div>
 

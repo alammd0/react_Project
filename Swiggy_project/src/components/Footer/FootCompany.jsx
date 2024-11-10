@@ -7,8 +7,8 @@ const FootCompany = () => {
     <div>
         <div className="footer_text_link">
             {
-                aboutData.map( (company) => (
-                    <div key={company.id} className='link_text'>
+                aboutData.map( (company, index) => (
+                    <div key={index} className='link_text'>
                         <NavLink to="" className="text_link">{company.company}</NavLink>
                     </div>
                 ))

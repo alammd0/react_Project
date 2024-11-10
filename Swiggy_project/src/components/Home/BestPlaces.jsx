@@ -11,8 +11,8 @@ const BestPlaces = () => {
 
             <div className='best_city'>
                 {
-                    bestPlaces.map( (place) => (
-                        <div key={place.id} className='city_container'>
+                    bestPlaces.map( (place, index) => (
+                        <div key={index} className='city_container'>
                             <button className='city_txt'>{place.places}</button> 
                         </div>
                     ))

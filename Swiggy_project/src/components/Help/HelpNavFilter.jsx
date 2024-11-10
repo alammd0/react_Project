@@ -14,8 +14,8 @@ const HelpNavFilter = () => {
 
             <div className='filter_data'>
                 {
-                    filterData.map((data) => (
-                        <button className={selectCategories === data.head ? 'filter_btn_click' : 'filter_btn_nonclick'} key={data.id} onClick={() => handleCategory(data.head)}>
+                    filterData.map((data, index) => (
+                        <button className={selectCategories === data.head ? 'filter_btn_click' : 'filter_btn_nonclick'} key={index} onClick={() => handleCategory(data.head)}>
                             {data.head}
                         </button>
                     ))

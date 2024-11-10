@@ -7,8 +7,8 @@ const FootAvail = () => {
     <div>
         <div className='footer_text_link'>
             {
-                availableData.map( (available) => (
-                    <div key={available.id} className='link_text'>
+                availableData.map( (available, index) => (
+                    <div key={index} className='link_text'>
                         <NavLink to = ""  className='text_link'> {available.city} </NavLink>
                     </div>
                 ))

@@ -1,4 +1,4 @@
-import { useContext} from 'react'
+import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import { CiSearch } from "react-icons/ci";
 import { BiSolidOffer } from "react-icons/bi";
@@ -10,10 +10,12 @@ import { IoMdHome } from "react-icons/io";
 import { TiThMenuOutline } from "react-icons/ti";
 import "./NavBar.css"
 import { functionProviderSwiggy } from '../Context/SwiggyContext';
+import LoginModal from '../LogSignup/LoginModal';
+import SignUpModal from '../LogSignup/SignUpModal';
 
 const NavBar = () => {
 
-    const {clickHandler, isMenu} = useContext(functionProviderSwiggy);
+    const { clickHandler, isMenu, openModal, openSignLoginModal, closeSignLoginModal } = useContext(functionProviderSwiggy);
 
     return (
         <div className='navBar_wrapper'>
@@ -54,7 +56,7 @@ const NavBar = () => {
                         </li>
 
                         <li>
-                            <NavLink className="text" to="/signin">
+                            <NavLink className="text" onClick={() => openSignLoginModal('login')}>
                                 <RiLoginCircleLine />
                                 <span>Sign In</span>
                             </NavLink>
@@ -76,6 +78,30 @@ const NavBar = () => {
                     }
 
                 </div>
+            </div>
+
+            <div>
+                {
+                    openModal && (
+                        <div>
+                            <div>
+                                <button className="modal_close_button" onClick={closeSignLoginModal}>&times;</button>
+                                {
+                                    openModal === 'login' ? (
+                                        <div>
+                                            <LoginModal />
+                                        </div>
+                                    ) : (
+                                        <div>
+                                            <SignUpModal />
+                                        </div>
+                                    )
+                                }
+
+                            </div>
+                        </div>
+                    )
+                }
             </div>
         </div>
     )
