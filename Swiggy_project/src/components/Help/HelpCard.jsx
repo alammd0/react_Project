@@ -1,5 +1,6 @@
 import React from 'react'
 import HelpNavFilter from './HelpNavFilter'
+import PartnerOnboard from './FilterDataInfo/PartnerOnboard'
 
 const HelpCard = () => {
     return (
@@ -7,10 +8,6 @@ const HelpCard = () => {
             <div>
                 <div>
                     <HelpNavFilter />
-                </div>
-
-                <div>
-                    
                 </div>
             </div>
         </div>

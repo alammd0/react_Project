@@ -7,11 +7,17 @@ export const functionProviderSwiggy = createContext();
 export const SwiggyFunctionProvider = ({ children }) => {
     const [isMenu, setIsmenu] = useState(false);
     const carouselRef = useRef(null);
+    const [isOpen, setIsOpen] = useState(null);
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [selectCategories, setSelectCategories] = useState("Partner Onboarding");
 
-    const clickDropdown = () => {
-        setIsOpen(!isOpen);
+
+    const handleCategory = (head) => {
+        setSelectCategories(head);
+    }
+
+    const clickDropdown = (index) => {
+        setIsOpen(isOpen === index ? null : index);
     }
 
 
@@ -36,7 +42,9 @@ export const SwiggyFunctionProvider = ({ children }) => {
         carouselRef,
         foodDelivery,
         isOpen,
-        clickDropdown
+        clickDropdown,
+        selectCategories,
+        handleCategory,
     }
 
     return (
