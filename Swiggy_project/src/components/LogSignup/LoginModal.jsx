@@ -2,19 +2,25 @@ import React, { useContext, useState } from 'react'
 import { functionProviderSwiggy } from '../Context/SwiggyContext'
 import { NavLink } from 'react-router-dom';
 import logo from "../../assets/Swiggy_logo.png"
+import "./Login.css"
+
 
 const LoginModal = () => {
 
-    const { openSignLoginModal, formData, signLoginHandler } = useContext(functionProviderSwiggy);
+    const { openSignLoginModal, formData, signLoginHandler, closeSignLoginModal } = useContext(functionProviderSwiggy);
 
 
 
     return (
-        <div>
-            <div>
+        <div className='login_wrapper'>
+            <div className='login_container'>
 
-                <div>
-                    <div>
+                <div className='close_btn'>
+                    <button className="modal_close_button" onClick={closeSignLoginModal}>&times;</button>
+                </div>
+
+                <div className='login_sign_heading_logo'>
+                    <div className='login_sign_heading'>
                         <h2>Login</h2>
                         <p>Or <NavLink onClick={() => openSignLoginModal('signup')}>Create an account</NavLink></p>
                     </div>
@@ -23,13 +29,12 @@ const LoginModal = () => {
                     </div>
                 </div>
 
-
                 <div></div>
 
                 <div>
-                    <form>
+                    <form className='form_container_login_sign'>
 
-                        <div>
+                        <div className='inputContainer'>
                             <input
                                 type="text"
                                 name='phoneNumber'
@@ -41,10 +46,11 @@ const LoginModal = () => {
                         </div>
 
                         <div>
-                            <button>Login</button>
+                            <button className='login_sign_btn'>Login</button>
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
     )
