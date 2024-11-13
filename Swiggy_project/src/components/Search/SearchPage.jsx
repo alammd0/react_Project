@@ -3,10 +3,20 @@ import { CiSearch } from "react-icons/ci";
 import { PopularFood } from "../../Data/searchdata";
 import "./SearchPage.css";
 import { SearchData } from "../../Data/searchdata";
+import { Link, useNavigate } from "react-router-dom";
+import Details from "./Details";
 
 const SearchPage = () => {
     const [searchKeyWords, SetSearchKeyWords] = useState("");
     const [filterData, setFilterData] = useState([]);
+    const [category, setcategory] = useState('');
+    const navigate = useNavigate()
+
+    function handlefoodDetails(title) {
+        setcategory(title);
+        navigate(`/details/${title}`);
+    }
+
 
     const handleSearch = (word) => {
         SetSearchKeyWords(word);
@@ -25,6 +35,8 @@ const SearchPage = () => {
         console.log(filterData);
     }, [filterData]);
 
+
+   
     return (
         <div className="search_wrapper">
             <div className="search_container">
@@ -74,7 +86,7 @@ const SearchPage = () => {
                     {filterData.length > 0 ? (
                         <div className="filter_data_container">
                             {filterData.map((data) => (
-                                <div className="filter_data_content">
+                                <Link  to={`/details/${data.title}`} key={data.id} className="filter_data_content">
                                     <div className="img_content">
                                         <img src={data.imagaeUrl} alt={data.title} />
                                     </div>
@@ -83,7 +95,7 @@ const SearchPage = () => {
                                         <h3>{data.title}</h3>
                                         <p>{data.desc}</p>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                     ) : (
@@ -94,6 +106,10 @@ const SearchPage = () => {
                         </div>
                     )}
                 </div>
+            </div>
+
+            <div>
+                <Details category = {category} />
             </div>
         </div>
     );

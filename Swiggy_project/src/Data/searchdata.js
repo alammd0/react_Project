@@ -9,6 +9,7 @@ export const PopularFood = [
         name : "Rolls",
         imgUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/3df4fca020027e89b89c733cdffc4966"
     },
+
     {
         id: "3",
         name : "Burger",
@@ -199,6 +200,7 @@ export const SearchData = [
         id: "22",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/Autosuggest/Top%20200%20queries/Burger.png",
         title: "Burger",
+        path : "/search/burger_details",
         desc: "Dish"
     },
 
@@ -206,6 +208,7 @@ export const SearchData = [
         id: "23",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/8/9/9c0e284f-ce35-4171-9a03-957f4b1600cb_5930.jpg",
         title: "Burger King",
+        path : "/search/burger_details",
         desc: "Restaurent"
     },
 
@@ -213,6 +216,7 @@ export const SearchData = [
         id: "24",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/a621fa2337beff38368bb19988d27fcb",
         title: "Lettuce Burger",
+        path : "/search/burger_details",
         desc: "Dish"
     },
 
@@ -220,6 +224,7 @@ export const SearchData = [
         id: "25",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/pjigc73gfnqadi5p1jja",
         title: "The Burger Club",
+        path : "/search/burger_details",
         desc: "Restaurent"
     },
 
@@ -227,6 +232,7 @@ export const SearchData = [
         id: "26",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/19d3d352cc815b9d88b22617b41fa97b",
         title: "Louis Burger",
+        path : "/search/burger_details",
         desc: "Restaurent"
     },
 
@@ -234,6 +240,7 @@ export const SearchData = [
         id: "27",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/f1aa621021a2826088089b89842d4e7c",
         title: "Wendy's Burgers",
+        path : "/search/burger_details",
         desc: "Restaurent"
     },
 
@@ -241,6 +248,7 @@ export const SearchData = [
         id: "28",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/a621fa2337beff38368bb19988d27fcb",
         title: "Lettuce Burger",
+        path : "/search/burger_details",
         desc: "Dish"
     },
 
