@@ -1,5 +1,6 @@
 .login_wrapper{
     margin: 0 auto;
+    z-index: 1000;
 }
 
 .login_container{
@@ -41,21 +42,21 @@
     width: 100%;
 }
 
-.inputContainer input{
+.inputContainer input {
     width: 70%;
     padding: 1rem 0.5rem;
-    border: 1px solid rgb(108, 47, 47, 0.5);
+    border: 1px solid rgba(108, 47, 47, 0.5); /* Changed to rgba */
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 400;
     text-transform: capitalize;
 }
 
-.login_sign_btn{
+.login_sign_btn {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     font-weight: 700;
-    border: 1.4px dotted rgb(56, 21, 21, 0.5);
+    border: 1.4px dotted rgba(56, 21, 21, 0.5); /* Changed to rgba */
     border-radius: 10px;
     background-color: #FF5200;
     text-transform: capitalize;

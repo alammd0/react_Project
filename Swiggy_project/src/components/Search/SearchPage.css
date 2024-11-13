@@ -79,3 +79,48 @@
     text-transform: capitalize;
     letter-spacing: 1px;    
 }
+
+
+.fliter_data_warpper{
+    margin-top: 2.5rem;
+}
+
+.filter_data_container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 1rem;    
+}
+
+.filter_data_content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #d1b7b7;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.filter_data_content:hover{
+    background-color: #ebe1e1;
+}
+
+.img_content{
+    height: 90px;
+    width: 90px;
+}
+
+.img_content img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(159, 126, 126);
+    border-radius: 12px;
+}
+
+.no_data p{
+    color: rgb(51, 25, 25);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}

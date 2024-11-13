@@ -1,6 +1,7 @@
 import { useState, createContext } from "react";
 import { useRef } from "react";
 import { foodDelivery } from "../../Data/data";
+import { SearchData } from "../../Data/searchdata";
 
 export const functionProviderSwiggy = createContext();
 
@@ -10,6 +11,18 @@ export const SwiggyFunctionProvider = ({ children }) => {
     const [isOpen, setIsOpen] = useState(null);
     const [selectCategories, setSelectCategories] = useState("Partner Onboarding");
     const [openModal, setOpenModal] = useState(null);
+    
+
+
+    // const [searchWord, setsearchWord] = useState('');
+    // const [filterSearchWords, setFilterSearchWords] = useState([]);
+
+    // function handleSearch(words){
+    //     setsearchWord(words);
+    //     const filterData = searchWord.filter( word => 
+    //         word.cate
+    //     )
+    // }
 
     const [formData, setFormData] = useState({
         phoneNumber : "",
