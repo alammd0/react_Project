@@ -1,54 +1,55 @@
 export const PopularFood = [
     {
         id: "1",
-        name : "Biryani",
+        name: "Biryani",
         imgUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/b4ff78ecc5b8b66f732dd06228916d65",
     },
     {
         id: "2",
-        name : "Rolls",
+        name: "Rolls",
         imgUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/3df4fca020027e89b89c733cdffc4966"
     },
 
     {
         id: "3",
-        name : "Burger",
+        name: "Burger",
         imgUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/e76b511935016406e6ebc11dd7593387"
     },
     {
         id: "4",
-        name : "Tea",
+        name: "Tea",
         imgUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/87664acb0f9dd95d10a549bb8190ab27"
     },
     {
         id: "5",
-        name : "Dessert",
+        name: "Dessert",
         imgUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/31f03222ea978aef3b10d386729eb076"
     },
     {
         id: "6",
-        name : "Sandwich",
+        name: "Sandwich",
         imgUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/36184033ebef97d27a85fa3af5c1d403"
     },
     {
         id: "7",
-        name : "Pizza",
+        name: "Pizza",
         imgUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/5dd234f7decdac4b4f71a2ff1408e10f"
     },
     {
         id: "8",
-        name : "North Indian",
+        name: "North Indian",
         imgUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/c170aa4262ec0d191642f42a3a03b4ce"
     },
     {
         id: "9",
-        name : "Ice Cream",
+        name: "Ice Cream",
         imgUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/d0884e09ef431ee610e54a0bb2dfecd5"
     }
 ]
 
 
 export const SearchData = [
+
     {
         id: "1",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/a6egysuwxm3d4kj7dyi7",
@@ -198,9 +199,10 @@ export const SearchData = [
 
     {
         id: "22",
+        name: "burger",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/Autosuggest/Top%20200%20queries/Burger.png",
         title: "Burger",
-        path : "/search/burger_details",
+        path: "/search/burger_details",
         desc: "Dish"
     },
 
@@ -208,7 +210,8 @@ export const SearchData = [
         id: "23",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/8/9/9c0e284f-ce35-4171-9a03-957f4b1600cb_5930.jpg",
         title: "Burger King",
-        path : "/search/burger_details",
+        name: "burger",
+        path: "/search/burger_details",
         desc: "Restaurent"
     },
 
@@ -216,7 +219,8 @@ export const SearchData = [
         id: "24",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/a621fa2337beff38368bb19988d27fcb",
         title: "Lettuce Burger",
-        path : "/search/burger_details",
+        name: "burger",
+        path: "/search/burger_details",
         desc: "Dish"
     },
 
@@ -224,7 +228,8 @@ export const SearchData = [
         id: "25",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/pjigc73gfnqadi5p1jja",
         title: "The Burger Club",
-        path : "/search/burger_details",
+        name: "burger",
+        path: "/search/burger_details",
         desc: "Restaurent"
     },
 
@@ -232,7 +237,8 @@ export const SearchData = [
         id: "26",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/19d3d352cc815b9d88b22617b41fa97b",
         title: "Louis Burger",
-        path : "/search/burger_details",
+        name: "burger",
+        path: "/search/burger_details",
         desc: "Restaurent"
     },
 
@@ -240,7 +246,8 @@ export const SearchData = [
         id: "27",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/f1aa621021a2826088089b89842d4e7c",
         title: "Wendy's Burgers",
-        path : "/search/burger_details",
+        name: "burger",
+        path: "/search/burger_details",
         desc: "Restaurent"
     },
 
@@ -248,7 +255,8 @@ export const SearchData = [
         id: "28",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/a621fa2337beff38368bb19988d27fcb",
         title: "Lettuce Burger",
-        path : "/search/burger_details",
+        name: "burger",
+        path: "/search/burger_details",
         desc: "Dish"
     },
 
@@ -502,5 +510,17 @@ export const SearchData = [
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/NI_CATALOG/IMAGES/CIW/2024/5/21/8de20a80-a231-4885-be55-0321bf52f987_icecream_7283NXWQWA_MN.png",
         title: "Ice Creams",
         desc: "Instamart"
+    }
+]
+
+
+export const searchTab = [
+    {
+        id: "1",
+        name: "Restaurants"
+    },
+    {
+        id: "2",
+        name: "Dish"
     }
 ]

@@ -22,8 +22,6 @@ function App() {
 
           <Route path="/help" element=<Help /> />
 
-          <Route path="/details/:category" element={<Details />} />
-
         </Routes>
       </div>
     </div>

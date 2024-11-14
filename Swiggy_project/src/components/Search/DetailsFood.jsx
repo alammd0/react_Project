@@ -1,20 +1,25 @@
 import React from 'react'
-import { burgerDataRest } from '../../Data/detailFood'
+import { burgerDetRest } from '../../Data/detailFood'
+import CardDetail from './CardDetail'
 
 
-const DetailsFood = (props) => {
+const DetailsFood = ({ category }) => {
 
-    const category = props.category ;
-
-    const ourDatais = burgerDataRest[category];
-
-    console.log(ourDatais);
+  const filterDetails = burgerDetRest.filter((tag) =>
+    tag.name.toLowerCase().includes(category.toLowerCase())
+  )
 
   return (
-    <div>
-        <div>
-
-        </div>
+    <div className='foodDetail_wrapper'>
+      <div className="foodDetail_container">
+        {
+          filterDetails.map((data, index) => (
+            <div className="foodDetails_card" key={index}>
+              <CardDetail data={data} />
+            </div>
+          ))
+        }
+      </div>
     </div>
   )
 }

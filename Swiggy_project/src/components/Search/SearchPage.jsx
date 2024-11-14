@@ -3,18 +3,17 @@ import { CiSearch } from "react-icons/ci";
 import { PopularFood } from "../../Data/searchdata";
 import "./SearchPage.css";
 import { SearchData } from "../../Data/searchdata";
-import { Link, useNavigate } from "react-router-dom";
 import Details from "./Details";
 
 const SearchPage = () => {
     const [searchKeyWords, SetSearchKeyWords] = useState("");
     const [filterData, setFilterData] = useState([]);
-    const [category, setcategory] = useState('');
-    const navigate = useNavigate()
+    const [category, setCategory] = useState('');
 
-    function handlefoodDetails(title) {
-        setcategory(title);
-        navigate(`/details/${title}`);
+
+    const handleFoodDetails = (title) => {
+        setCategory(title);
+        setFilterData([]);
     }
 
 
@@ -36,31 +35,33 @@ const SearchPage = () => {
     }, [filterData]);
 
 
-   
+
     return (
         <div className="search_wrapper">
             <div className="search_container">
-                <div>
-                    <form
-                        className="input_search_container"
-                        onSubmit={(e) => e.preventDefault()}>
-                        <div className="input_search">
-                            <input
-                                type="text"
-                                placeholder="Search for restaurants and food"
-                                name="searchKeyWords"
-                                value={searchKeyWords}
-                                onChange={(e) => handleSearch(e.target.value)}
-                            />
-                        </div>
+                {!category && (
+                    <div>
+                        <form
+                            className="input_search_container"
+                            onSubmit={(e) => e.preventDefault()}>
+                            <div className="input_search">
+                                <input
+                                    type="text"
+                                    placeholder="Search for restaurants and food"
+                                    name="searchKeyWords"
+                                    value={searchKeyWords}
+                                    onChange={(e) => handleSearch(e.target.value)}
+                                />
+                            </div>
 
-                        <div className="input_icon">
-                            <CiSearch />
-                        </div>
-                    </form>
-                </div>
+                            <div className="input_icon">
+                                <CiSearch />
+                            </div>
+                        </form>
+                    </div>
+                )}
 
-                {filterData.length === 0 && (
+                {filterData.length === 0 && !category && (
                     <div>
                         <div>
                             <div className="recent_container">
@@ -72,8 +73,8 @@ const SearchPage = () => {
                             </div>
 
                             <div className="popular_image">
-                                {PopularFood.map((url) => (
-                                    <div key={url.id} onClick={() => handleImageClick(url.name)}>
+                                {PopularFood.map((url, index) => (
+                                    <div key={index} onClick={() => handleImageClick(url.name)}>
                                         <img src={url.imgUrl} />
                                     </div>
                                 ))}
@@ -83,10 +84,10 @@ const SearchPage = () => {
                 )}
 
                 <div className="fliter_data_warpper">
-                    {filterData.length > 0 ? (
+                    {filterData.length > 0 && !category ? (
                         <div className="filter_data_container">
-                            {filterData.map((data) => (
-                                <Link  to={`/details/${data.title}`} key={data.id} className="filter_data_content">
+                            {filterData.map((data, index) => (
+                                <div onClick={() => handleFoodDetails(data.name)} key={index} className="filter_data_content">
                                     <div className="img_content">
                                         <img src={data.imagaeUrl} alt={data.title} />
                                     </div>
@@ -95,12 +96,12 @@ const SearchPage = () => {
                                         <h3>{data.title}</h3>
                                         <p>{data.desc}</p>
                                     </div>
-                                </Link>
+                                </div>
                             ))}
                         </div>
                     ) : (
 
-                        searchKeyWords &&
+                        searchKeyWords && !category &&
                         <div className="no_data">
                             <p>No Data related to this {searchKeyWords}</p>
                         </div>
@@ -109,7 +110,9 @@ const SearchPage = () => {
             </div>
 
             <div>
-                <Details category = {category} />
+                {
+                    category && <Details category={category} />
+                }
             </div>
         </div>
     );

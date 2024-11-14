@@ -124,3 +124,122 @@
     font-weight: 700;
     text-transform: capitalize;
 }
+
+
+/* Detail Food */
+.tab_res {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tab_name {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.tab-active button {
+    padding: 0.75rem 1.25rem;
+    border: none;
+    background-color: #3E4152;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.tab-active button {
+    padding: 0.75rem 1.25rem;
+    border: none;
+    background-color: #3E4152;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-active button:hover {
+    background-color: #505366;
+}
+
+.tab-inactive button {
+    padding: 0.75rem 1.25rem;
+    border: 1px solid rgba(100, 78, 33, 0.5);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.tab-inactive button:hover {
+    background-color: rgba(100, 78, 33, 0.2);
+}
+
+
+
+/* Food Detail Wrapper */
+.foodDetail_wrapper {
+    background-color: #F5F6F8;
+    padding: 1.25rem;
+}
+
+.foodDetail_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.foodDetails_card {
+    background-color: rgb(97, 79, 46);
+    color: #FFF; 
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    border-radius: 8px;
+    width: 430px;
+    /* transition: transform 0.3s ease; */
+}
+
+/* .foodDetails_card:hover {
+    transform: scale(1.02);
+} */
+
+.foodDetails_card_upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foodDetails_card_text {
+    line-height: 1.5;
+}
+
+.foodDetails_card_buttom {
+    display: flex;
+}
+
+.foodDetails_card_buttom_img img {
+    height: 60px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .tab_name {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .foodDetail_container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

@@ -1,33 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DetailsFood from './DetailsFood'
 import Restaurent from './Restaurent'
-import { useParams } from 'react-router-dom'
+import { SearchData, searchTab } from '../../Data/searchdata'
+import TabFilterPage from './TabFilterPage'
 
-const Details = () => {
+const Details = ({ category }) => {
 
-    // const category = props.category ;
 
-    const {category} = useParams();
+    const [tabName, setTabName] = useState('Dish');
 
-    console.log("Inside the deatilas" , category)
+    const handleTabName = (tab) => {
+        setTabName(tab);
+    }
+
+    console.log(category)
 
     return (
         <div>
-
-            <div>
-                <div>
-                    <button>Restaurant</button>
-                    <button>Dish</button>
+            <div className='tab_res'>
+                <div className='tab_name'>
+                    {
+                        searchTab.map((tab) => (
+                            <div className={tabName === tab.name ? 'tab-active' : 'tab-inactive'} key={tab.id} onClick={() => handleTabName(tab.name)}>
+                                <button>{tab.name}</button>
+                            </div>
+                        ))
+                    }
                 </div>
 
                 <div>
-                    <div>
-                        <DetailsFood category = {category} />
-                    </div>
+                    {
+                        tabName && (
+                            <div>
+                                <TabFilterPage category={category} tabName={tabName} />
+                            </div>
+                        )
+                    }
 
-                    <div>
-                        <Restaurent />
-                    </div>
                 </div>
             </div>
 
