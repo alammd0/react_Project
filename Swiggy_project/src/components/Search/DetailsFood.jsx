@@ -10,17 +10,16 @@ const DetailsFood = ({ category }) => {
   )
 
   return (
-    <div className='foodDetail_wrapper'>
-      <div className="foodDetail_container">
-        {
-          filterDetails.map((data, index) => (
-            <div className="foodDetails_card" key={index}>
-              <CardDetail data={data} />
-            </div>
-          ))
-        }
-      </div>
+    <div className="foodDetail_container">
+      {
+        filterDetails.map((data, index) => (
+          <div className="foodDetails_card" key={index}>
+            <CardDetail data={data} />
+          </div>
+        ))
+      }
     </div>
+
   )
 }
 

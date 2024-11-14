@@ -16,7 +16,6 @@ const Details = ({ category }) => {
     console.log(category)
 
     return (
-        <div>
             <div className='tab_res'>
                 <div className='tab_name'>
                     {
@@ -39,8 +38,6 @@ const Details = ({ category }) => {
 
                 </div>
             </div>
-
-        </div>
     )
 }
 
