@@ -3,12 +3,11 @@ import NavBar from "./components/Navbar/NavBar"
 import Home from "./components/Home/Home"
 import Help from "./components/Help/Help"
 import SearchPage from "./components/Search/SearchPage"
-import Details from "./components/Search/Details"
-import { SearchData } from "./Data/searchdata"
+import "./App.css"
 
 function App() {
   return (
-    <div>
+    <div className="main_conent_all">
       <div>
         <NavBar />
       </div>

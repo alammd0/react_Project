@@ -27,7 +27,7 @@ const Details = ({ category }) => {
                     }
                 </div>
 
-                <div>
+                <div className='foods_card_relative_cont'>
                     {
                         tabName && (
                             <div>

@@ -10,17 +10,17 @@ const Restaurent = ({ category }) => {
 
 
   return (
-    <div>
-      <div>
-        {
-          filterDatares.map((data, index) => (
-            <div key={index}>
-              <RestCards data={data} />
-            </div>
-          ))
-        }
-      </div>
+
+    <div className='Resturent_container'>
+      {
+        filterDatares.map((data, index) => (
+          <div className='resturent_Cards' key={index}>
+            <RestCards data={data} />
+          </div>
+        ))
+      }
     </div>
+
   )
 }
 

@@ -54,6 +54,7 @@ export const SearchData = [
         id: "1",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/a6egysuwxm3d4kj7dyi7",
         title: "North Indian",
+        name: "northindian",
         desc: "Cuisine"
     },
 
@@ -61,6 +62,7 @@ export const SearchData = [
         id: "2",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/dc66a8b4cc96abd5c40abc03b887006a",
         title: "Spiced North indian Gravy",
+        name: "northindian",
         desc: "Dish"
     },
 
@@ -68,13 +70,14 @@ export const SearchData = [
         id: "3",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/FOOD_CATALOG/IMAGES/CMS/2024/4/2/02c15c1b-2805-4cd0-8e87-2b6d5f70cd12_bdf9929a-24c6-4b80-a253-2ae7259d156b.jpg",
         title: "North Indian Veg Thali",
+        name: "northindian",
         desc: "Dish"
     },
 
     {
         id: "4",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/fa0921972490c16cc6cf4f4b8a65a62f",
-        title: "North Indian Mini Thali",
+        title: "North Indian Mini Thali",name: "northindian",
         desc: "Dish"
     },
 
@@ -82,6 +85,7 @@ export const SearchData = [
         id: "5",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/s8jsrqftfbxutp4sjgp9",
         title: "North Indian Bhavan",
+        name: "northindian",
         desc: "Restaurant"
     },
 
@@ -89,34 +93,39 @@ export const SearchData = [
         id: "6",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/3/30/b6932f78-b706-42d9-849c-61cbf69d38d9_796967.jpg",
         title: "North Indias Delicacy",
+        name: "northindian",
         desc: "Restaurent"
     },
 
     {
         id: "7",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/bem2glujffrjuqqrcqgw",
-        title: "Chicken Roll",
+        title: "Chicken Rolls",
+        name: "roll",
         desc: "Dish"
     },
 
     {
         id: "8",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/rvslgmjo8doxvzca4pzp",
-        title: "Egg Roll",
+        title: "Egg Rolls",
+        name: "roll",
         desc: "Dish"
     },
 
     {
         id: "9",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/btrmbvwdfin5wp4dw1v7",
-        title: "Panner Roll",
+        title: "Panner Rolls",
+        name: "roll",
         desc: "Dish"
     },
 
     {
         id: "10",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/20/cd8823e5-1827-44b5-bf69-7b61a405402f_12368.jpg",
-        title: "Wraps Kathi Roll",
+        title: "Wraps Kathi Rolls",
+        name: "roll",
         desc: "Restaurent"
     },
 
@@ -124,27 +133,31 @@ export const SearchData = [
         id: "11",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/20/cd8823e5-1827-44b5-bf69-7b61a405402f_12368.jpg",
         title: "Bap of Rolls",
+        name: "roll",
         desc: "Restaurent"
     },
 
     {
         id: "12",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/xa0tfacxwfhmo8pimv9n",
-        title: "Roll Sking",
+        title: "Rolls Sking",
+        name: "roll",
         desc: "Restaurent"
     },
 
     {
         id: "13",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/fhpr6axlzez2uk0hsv47",
-        title: "Seek Roll",
+        title: "Seek Rolls",
+        name: "roll",
         desc: "Restaurent"
     },
 
     {
         id: "14",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/3df4fca020027e89b89c733cdffc4966",
-        title: "Spicy Roll",
+        title: "Spicy Rolls",
+        name: "roll",
         desc: "Dish"
     },
 
@@ -152,6 +165,7 @@ export const SearchData = [
         id: "15",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/3df4fca020027e89b89c733cdffc4966",
         title: "Teas",
+        name: "tea",
         desc: "Dish"
     },
 
@@ -159,6 +173,7 @@ export const SearchData = [
         id: "16",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/bea01351bca6d442c1794574bd2919c5",
         title: "Tea",
+        name: "tea",
         desc: "Instamart"
     },
 
@@ -166,6 +181,7 @@ export const SearchData = [
         id: "17",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/ga0yhrrmt07giyrc72ia",
         title: "Tulsi Tea",
+        name: "tea",
         desc: "Dish"
     },
 
@@ -173,6 +189,7 @@ export const SearchData = [
         id: "18",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/08c1adff7755bc211c4d7644fd5ec201",
         title: "Dush Tea",
+        name: "tea",
         desc: "Instamart"
     },
 
@@ -180,6 +197,7 @@ export const SearchData = [
         id: "19",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/i0nujxik33cl8izkl3et",
         title: "Got Tea",
+        name: "tea",
         desc: "Restaurent"
     },
 
@@ -264,6 +282,7 @@ export const SearchData = [
         id: "29",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/Icons-Autosuggest/AS_Cuisine_3x",
         title: "Desserts",
+        name: "Dessert",
         desc: "Cuisine"
     },
 
@@ -271,6 +290,7 @@ export const SearchData = [
         id: "30",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/Autosuggest/Top%20200%20queries/Dessert.png",
         title: "Dessert",
+        name: "Dessert",
         desc: "Dish"
     },
 
@@ -278,6 +298,7 @@ export const SearchData = [
         id: "31",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/wufqy6jau9zdobzlmjkp",
         title: "High on Dessert",
+        name: "Dessert",
         desc: "Restaurant"
     },
 
@@ -285,6 +306,7 @@ export const SearchData = [
         id: "32",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/5/29/d44b4cae-5218-49a6-8e55-76e44f3b0235_446108.JPG",
         title: "WarmOven Cake & Dessert",
+        name: "Dessert",
         desc: "Restaurant"
     },
 
@@ -292,6 +314,7 @@ export const SearchData = [
         id: "33",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/4/30/d3c806c8-bee7-45dd-932b-a18bd74e70d8_878721.jpg",
         title: "GO Zero Ice Cream & Dessert",
+        name: "Dessert",
         desc: "Restaurant"
     },
 
@@ -299,6 +322,7 @@ export const SearchData = [
         id: "34",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/5/13be918b-8788-4648-af8e-6f4860461a9a_580609.jpg",
         title: "GateAway-Ice Cream & Dessert",
+        name: "Dessert",
         desc: "Restaurant"
     },
 
@@ -306,6 +330,7 @@ export const SearchData = [
         id: "35",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/c6lefofwd83m7rs4iox3",
         title: "Frozen Bottle - Milkshakes, Dessert and Ice Cream",
+        name: "dessert",
         desc: "Restaurant"
     },
 
@@ -313,6 +338,7 @@ export const SearchData = [
         id: "36",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/30/86a8a61d-da5e-4664-a68c-33611a0d1396_643678.JPG",
         title: "WeFit - Protein Bowls, Salads & Sandwiches",
+        name: "sandwich",
         desc: "Restaurant"
     },
 
@@ -320,6 +346,7 @@ export const SearchData = [
         id: "37",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/FOOD_CATALOG/IMAGES/CMS/2024/7/31/fc641056-c802-4a35-9d3b-62786e456112_def965c7-d14c-4f60-9705-96996bdb527f.jpg",
         title: "Chicken Sandwich Combo",
+        name: "sandwich",
         desc: "Dish"
     },
 
@@ -327,6 +354,7 @@ export const SearchData = [
         id: "38",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/Icons-Autosuggest/AS_Dish_3x",
         title: "Combo Panner Sandwich",
+        name: "sandwich",
         desc: "Dish"
     },
 
@@ -334,6 +362,7 @@ export const SearchData = [
         id: "39",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/Autosuggest/Top%20200%20queries/Sandwich.png",
         title: "Sandwich",
+        name: "sandwich",
         desc: "Dish"
     },
 
@@ -341,6 +370,7 @@ export const SearchData = [
         id: "40",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/a9fec74b9b4257a43579bbe79e54ed96",
         title: "Zesty Sandwich Combo",
+        name: "sandwich",
         desc: "Dish"
     },
 
@@ -348,6 +378,7 @@ export const SearchData = [
         id: "41",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/do3nrnce5uikedgfpotz",
         title: "Panner Sandwich",
+        name: "sandwich",
         desc: "Dish"
     },
 
@@ -355,6 +386,7 @@ export const SearchData = [
         id: "42",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/Autosuggest/Top%20200%20queries/Biryani.png",
         title: "Biryani",
+        name: "biryani",
         desc: "Dish"
     },
 
@@ -362,6 +394,7 @@ export const SearchData = [
         id: "43",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/Autosuggest/Top%20200%20queries/Veg%20Biryani.png",
         title: "Veg Biryani",
+        name: "biryani",
         desc: "Dish"
     },
 
@@ -369,6 +402,7 @@ export const SearchData = [
         id: "44",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/2380b9e8ee23f594ae181610af93bdf4",
         title: "Veg Hyderabadi Dum Biryani",
+        name: "biryani",
         desc: "Dish"
     },
 
@@ -376,6 +410,7 @@ export const SearchData = [
         id: "45",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/97377e54937c079fe269d744aa66274a",
         title: "Biryani Blues",
+        name: "biryani",
         desc: "Restaurant"
     },
 
@@ -383,6 +418,7 @@ export const SearchData = [
         id: "46",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/56646c3f698b3c5ae53639c49a4725af",
         title: "Bikkgane Biryani",
+        name: "biryani",
         desc: "Restaurant"
     },
 
@@ -390,6 +426,7 @@ export const SearchData = [
         id: "47",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/17/4c994e3f-aa43-4349-8bbe-a88108e46477_35269.jpg",
         title: "Biryani By Kilo",
+        name: "biryani",
         desc: "Restaurant"
     },
 
@@ -397,6 +434,7 @@ export const SearchData = [
         id: "48",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/jgyhyl8ttz7owvit7liu",
         title: "Biryani Mahal",
+        name: "biryani",
         desc: "Restaurant"
     },
 
@@ -404,6 +442,7 @@ export const SearchData = [
         id: "49",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/qp94p0vcv6cjr2raz6iz",
         title: "Andhra Birayani",
+        name: "biryani",
         desc: "Dish"
     },
 
@@ -411,13 +450,14 @@ export const SearchData = [
         id: "50",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/97377e54937c079fe269d744aa66274a",
         title: "Biryani Blues",
+        name: "biryani",
         desc: "Restaurant"
     },
 
     {
         id: "51",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/Autosuggest/Top%20200%20queries/Pizza.png",
-        title: "Pizza",
+        title: "Pizza", name: "pizza",
         desc: "Dish"
     },
 
@@ -425,6 +465,7 @@ export const SearchData = [
         id: "52",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/16/8b1d941b-0571-40af-b161-3259f3467c16_11104.jpg",
         title: "Pizza Hut",
+        name: "pizza",
         desc: "Restaurant"
     },
 
@@ -432,6 +473,7 @@ export const SearchData = [
         id: "53",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/24/f4102c27-d0d9-443a-9c5a-a962d02741d6_24136.JPG",
         title: "Domino's Pizza",
+        name: "pizza",
         desc: "Restaurant"
     },
 
@@ -439,6 +481,7 @@ export const SearchData = [
         id: "54",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/yc2ydwe9q5ud9bwaxksr",
         title: "La Pino'z Pizza",
+        name: "pizza",
         desc: "Restaurant"
     },
 
@@ -446,6 +489,7 @@ export const SearchData = [
         id: "55",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/edmqhbhowk7qr6x2xljv",
         title: "Pizza kart",
+        name: "pizza",
         desc: "Restaurant"
     },
 
@@ -453,6 +497,7 @@ export const SearchData = [
         id: "56",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/3/29/ca3b407c-f92a-4622-8677-5eebe8ae926f_14353.jpg",
         title: "Tossina Pizza",
+        name: "pizza",
         desc: "Restaurant"
     },
 
@@ -460,6 +505,7 @@ export const SearchData = [
         id: "57",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/uairqxilufimdqkinvju",
         title: "Pizza Galleria",
+        name: "pizza",
         desc: "Restaurant"
     },
 
@@ -467,6 +513,7 @@ export const SearchData = [
         id: "58",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/Autosuggest/Top%20200%20queries/Icecream.png",
         title: "Ice cream",
+        name: "icecream",
         desc: "Dish"
     },
 
@@ -474,6 +521,7 @@ export const SearchData = [
         id: "59",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/11/10e50676-d6d7-4f19-a834-26c61d34465e_27797.JPG",
         title: "Natural Ice Cream",
+        name: "icecream",
         desc: "Restaurant"
     },
 
@@ -481,6 +529,7 @@ export const SearchData = [
         id: "60",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/18d8b8fb6bac8063a6fa886e20148110",
         title: "NIC Ice Cream",
+        name: "icecream",
         desc: "Restaurant"
     },
 
@@ -488,6 +537,7 @@ export const SearchData = [
         id: "61",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/49845b494b1e637209b7bd1c7ca184ad",
         title: "Havmor Havfunn Ice Cream",
+        name: "icecream",
         desc: "Restaurant"
     },
 
@@ -495,6 +545,7 @@ export const SearchData = [
         id: "62",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/85ccae4e3576f9330af102c46ca85395",
         title: "Kawality Walls Ice Cream And More",
+        name: "icecream",
         desc: "Restaurant"
     },
 
@@ -502,6 +553,7 @@ export const SearchData = [
         id: "63",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/18d8b8fb6bac8063a6fa886e20148110",
         title: "Nic Ice Creams",
+        name: "icecream",
         desc: "Restaurant"
     },
 
@@ -509,6 +561,7 @@ export const SearchData = [
         id: "64",
         imagaeUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/NI_CATALOG/IMAGES/CIW/2024/5/21/8de20a80-a231-4885-be55-0321bf52f987_icecream_7283NXWQWA_MN.png",
         title: "Ice Creams",
+        name: "icecream",
         desc: "Instamart"
     }
 ]

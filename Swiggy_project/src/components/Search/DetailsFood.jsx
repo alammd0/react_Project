@@ -6,7 +6,7 @@ import CardDetail from './CardDetail'
 const DetailsFood = ({ category }) => {
 
   const filterDetails = burgerDetRest.filter((tag) =>
-    tag.name.toLowerCase().includes(category.toLowerCase())
+    tag.name.toLowerCase().includes((category || "").toLowerCase())
   )
 
   return (

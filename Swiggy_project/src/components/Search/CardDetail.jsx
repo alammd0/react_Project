@@ -6,7 +6,7 @@ const CardDetail = ({ data }) => {
     console.log(data);
 
     return (
-        <div>
+        <div >
             <CardDet
                 by={data.by}
                 rating={data.rating}
@@ -14,6 +14,7 @@ const CardDetail = ({ data }) => {
                 title={data.title}
                 price={data.price}
                 url={data.url}
+                desc = {data.desc}
             />
         </div>
     )
