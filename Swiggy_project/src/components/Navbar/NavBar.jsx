@@ -13,7 +13,7 @@ import { functionProviderSwiggy } from '../Context/SwiggyContext';
 import LoginModal from '../LogSignup/LoginModal';
 import SignUpModal from '../LogSignup/SignUpModal';
 
-const NavBar = () => {
+const NavBar = ({openNavbar}) => {
 
     const { clickHandler, isMenu, openModal, openSignLoginModal, closeSignLoginModal } = useContext(functionProviderSwiggy);
 
@@ -63,7 +63,7 @@ const NavBar = () => {
                         </li>
 
                         <li>
-                            <NavLink className="text" to="/cart">
+                            <NavLink onClick={openNavbar} className="text" to="/cart">
                                 <RiLoginCircleLine />
                                 <span>Cart</span>
                             </NavLink>

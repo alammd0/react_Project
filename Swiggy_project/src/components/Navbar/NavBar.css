@@ -111,3 +111,17 @@
     transition: all 1s ease-in;
 }
 
+
+/* Card Navbar */
+
+.cardNavbar_logo_container{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.navBar_item{
+    display: flex;
+    list-style-type: none;
+    gap: 18px;
+}

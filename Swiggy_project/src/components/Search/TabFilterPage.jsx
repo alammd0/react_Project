@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import DetailsFood from './DetailsFood';
 import Restaurent from './Restaurent';
 
-const TabFilterPage = ({ tabName, category, handleOpenClose }) => {
+const TabFilterPage = ({ tabName, category, handleOpenClose, addCartItem}) => {
 
     console.log(tabName);
 
@@ -12,7 +12,7 @@ const TabFilterPage = ({ tabName, category, handleOpenClose }) => {
             <div>
                 {
                     tabName === 'Dish' ? (
-                        <DetailsFood category={category} />
+                        <DetailsFood addCartItem = {addCartItem} category={category} />
                     ) : (
                         <Restaurent category={category} />
                     )

@@ -4,7 +4,7 @@ import Restaurent from './Restaurent'
 import { SearchData, searchTab } from '../../Data/searchdata'
 import TabFilterPage from './TabFilterPage'
 
-const Details = ({ category }) => {
+const Details = ({ category, addCartItem }) => {
 
 
     const [tabName, setTabName] = useState('Dish');
@@ -37,7 +37,7 @@ const Details = ({ category }) => {
                 {
                     openClose && (
                         <div>
-                            <TabFilterPage category={category} tabName={tabName} handleOpenClose={handleOpenClose}/>
+                            <TabFilterPage addCartItem={addCartItem} category={category} tabName={tabName} handleOpenClose={handleOpenClose}/>
                         </div>
                     )
                 }
