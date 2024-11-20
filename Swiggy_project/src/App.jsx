@@ -13,11 +13,19 @@ function App() {
 
 
   const [isOpenNavbar, setisOpenNavbar] = useState(false);
-  const [cartItem, SetCartItem] = useState([]); 
+  const [cartItem, SetCartItem] = useState([]);
 
 
   function addCartItem(item) {
     SetCartItem((prevItem) => [...prevItem, item]);
+  }
+
+  function removeCartItem(itemId) {
+    SetCartItem((prevItem) => prevItem.filter((item) => item.id !== itemId))
+  }
+
+  function clear() {
+    SetCartItem([]);
   }
 
   console.log(cartItem);
@@ -29,6 +37,8 @@ function App() {
   function openMainNavbar() {
     setisOpenNavbar(false);
   }
+
+
 
   return (
     <div className="main_conent_all">
@@ -43,11 +53,11 @@ function App() {
         <Routes>
           <Route path="/" element=<Home /> />
 
-          <Route path="/search" element=<SearchPage addCartItem = {addCartItem} /> />
+          <Route path="/search" element=<SearchPage addCartItem={addCartItem} /> />
 
           <Route path="/help" element=<Help /> />
 
-          <Route path="/cart"  element=<Cart  openMainNavbar={openMainNavbar} cartItem={cartItem}/> />
+          <Route path="/cart" element=<Cart openMainNavbar={openMainNavbar} cartItem={cartItem} removeCartItem ={removeCartItem} clear={clear} /> />
         </Routes>
       </div>
     </div>

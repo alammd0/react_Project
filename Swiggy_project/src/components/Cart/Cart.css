@@ -1,0 +1,91 @@
+.cart_wrapper{
+    max-width: 850px;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+
+.item_container{
+    display: flex;
+    text-align: start;
+    gap: 5rem;
+}
+
+.card_item_cart{
+    background-color: rgb(172, 231, 231, 0.5);
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 420px;
+    line-height: 1;
+    border: 2px solid rgb(236, 156, 156);
+    border-radius: 12px;
+    position: relative;
+}
+
+.close_btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close_btn button{
+    border-radius: 50%;
+    border: none;
+    font-size: 1.25rem;
+}
+
+.text_container_cart{
+    line-height: 0.7;
+}
+
+.image_Container_cart img{
+    border-radius: 8px;
+}
+
+.price_card_card{
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+}
+
+.price_card_card p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.cart_btn_section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart_btn_section button{
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: #FFA905;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.cart_empty_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.empty_btn{
+    background-color: #FFA905;
+    text-decoration: none;   
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    color: white; 
+    text-transform: capitalize;
+}
