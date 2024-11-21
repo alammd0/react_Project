@@ -178,101 +178,125 @@ export const foodDelivery = [
 export const bestPlaces = [
     {
         id: "1",
-        places: "Best Restaurants in Bangalore"
+        places: "Best Restaurants in Bangalore",
+        path : "/"
     },
     {
         id: "2",
-        places: "best restaurants in pune"
+        places: "best restaurants in pune",
+        path : "/"
     },
     {
         id: "3",
-        places: "best restaurant in mumbai"
+        places: "best restaurant in mumbai",
+        path : "/"
     },
     {
         id: "4",
-        places: "best restaurant in patna"
+        places: "best restaurant in patna",
+        path : "/"
     },
     {
         id: "5",
-        places: "best restaurant in Noida"
+        places: "best restaurant in Noida",
+        path : "/"
     },
     {
         id: "6",
-        places: "best restaurant in bhopal"
+        places: "best restaurant in bhopal",
+        path : "/"
     },
     {
         id: "7",
-        places: "Best restaurant in ranchi"
+        places: "Best restaurant in ranchi",
+        path : "/"
     },
     {
         id: "8",
-        places: "best restaurant in Ranchi"
+        places: "best restaurant in Ranchi",
+        path : "/"
     },
     {
         id: "9",
-        places: "Best restaurant in Delhi"
+        places: "Best restaurant in Delhi",
+        path : "./"
     },
     {
         id : "10",
-        places : "Best restaurant in dehradun"
+        places : "Best restaurant in dehradun",
+        path : "./"
     },
     {
         id : '11',
-        places:"Best restaurant in Udaipur"
+        places:"Best restaurant in Udaipur",
+        path : "./"
     },
     {
         id : "12",
-        places : "Show More"
+        places : "Show More",
+        path : "/search"
     }
 ];
 
 export const nearme = [
     {
         id : "1",
-        location : "Chinese Restaurant Near Me"
+        location : "Chinese Restaurant Near Me",
+        path : "/"
     },
     {
         id : "2",
-        location : "South Indian Restaurant Near Me"
+        location : "South Indian Restaurant Near Me",
+        path : "/"
     },
     {
         id : "3",
-        location : "India Restaurant Near Me"
+        location : "India Restaurant Near Me",
+        path : "/"
     },
     {
         id : "4",
-        location : "Kerala restaurant near Me"
+        location : "Kerala restaurant near Me",
+        path : "/"
     },
     {
         id : "5",
-        location : "korean restaurant near Me"
+        location : "korean restaurant near Me",
+        path : "/"
     },
     {
         id : "6",
-        location : "North Indian restaurant near Me"
+        location : "North Indian restaurant near Me",
+        path : "/"
     },
     {
         id : "7",
-        location : "Seafood restaurant near Me" 
+        location : "Seafood restaurant near Me" ,
+        path : "/"
     },
     {
         id : "8",
-        location : "Bengali restaurant near Me"
+        location : "Bengali restaurant near Me",
+        path : "./"
     },
     {
         id : "9",
-        location : "Punjabi restaurant near Me"
+        location : "Punjabi restaurant near Me",
+        path : "./"
     },
     {
         id : "10",
-        location : "Italian restaurant near Me"
+        location : "Italian restaurant near Me",
+        path : "./"
     },
     {
         id : "11",
-        location : "Andhra restaurant near Me"
+        location : "Andhra restaurant near Me",
+        path : "./"
     },
     {
         id : "12",
-        location : "Show More"
+        location : "Show More",
+        path : "/search"
     }
 ]

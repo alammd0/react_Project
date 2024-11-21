@@ -1,5 +1,6 @@
 import React from 'react'
 import { nearme } from '../../Data/data'
+import { Link } from 'react-router-dom'
 
 const NearMe = () => {
     return (
@@ -13,7 +14,9 @@ const NearMe = () => {
                     {
                         nearme.map((location, index) => (
                             <div key={index} className='city_container'>
-                                <button className='city_txt'>{location.location}</button>
+                                <Link  to={location.path}>
+                                    <button className='city_txt'>{location.location}</button>
+                                </Link>
                             </div>
                         ))
                     }

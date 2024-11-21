@@ -7,6 +7,7 @@ import "./App.css"
 import CardNavbar from "./components/Navbar/CardNavbar"
 import Cart from "./components/Cart/Cart"
 import { useState } from "react"
+import Offers from "./components/Offer/Offers"
 
 
 function App() {
@@ -53,11 +54,13 @@ function App() {
         <Routes>
           <Route path="/" element=<Home /> />
 
-          <Route path="/search" element=<SearchPage addCartItem={addCartItem} /> />
+          <Route path="/search" element=<SearchPage addCartItem={addCartItem} cartItem={cartItem} /> />
 
           <Route path="/help" element=<Help /> />
 
           <Route path="/cart" element=<Cart openMainNavbar={openMainNavbar} cartItem={cartItem} removeCartItem ={removeCartItem} clear={clear} /> />
+
+          <Route path="/offer" element = <Offers/> ></Route>
         </Routes>
       </div>
     </div>

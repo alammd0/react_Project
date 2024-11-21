@@ -12,11 +12,6 @@ const ImageSlider = () => {
         <div className="food-carousel">
             <div className='heading_scroll'>
                 <div> <h2>What's on your mind?</h2></div>
-                <div className='res_btn'>
-                    <button className='arrow' onClick={scrollLeft}><GrFormPreviousLink /> </button>
-                    <button className='arrow' onClick={scrollRight}><GrFormNextLink /></button>
-                </div>
-
             </div>
 
             <div className="carousel-container">

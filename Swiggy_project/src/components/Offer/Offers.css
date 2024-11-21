@@ -1,0 +1,47 @@
+.Offer_Container{
+    max-width: 1150px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: auto;
+}
+
+.heading_container_offer h2{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.offer_card_wrapper{
+    padding-top: 2.5rem; 
+}
+
+.show_More_btn_offer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.button{
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: black;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: rgb(209, 237, 237);
+}
+
+.offer_container{
+    padding: 1rem;
+    border: 2px solid rgb(124, 98, 98, 0.5);
+    border-radius: 12px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer_container_offer{
+    margin-top: 2rem;
+}

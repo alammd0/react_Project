@@ -304,6 +304,18 @@
     border-radius: 5px;
 }
 
+.add_btn_check{
+    position: absolute;
+    bottom: -10px;
+    right: 15%;
+    padding: 0.25rem;
+    background-color: #c9cbdc;
+    outline: none;
+    border: 1px solid #d1b7b7;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
 .Resturent_container{
     display: flex;
     flex-wrap: wrap;

@@ -99,6 +99,8 @@
 .res_content{
     transform: scale(1);
     transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    color:rgb(66, 53, 53);
 }
 
 .res_content:hover{
@@ -298,6 +300,8 @@
     border-radius: 12px;
     transform: scale(1);
     transition: all 0.5s;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .city_txt:hover{

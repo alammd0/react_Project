@@ -5,7 +5,7 @@ import "./SearchPage.css";
 import { SearchData } from "../../Data/searchdata";
 import Details from "./Details";
 
-const SearchPage = ({ addCartItem }) => {
+const SearchPage = ({ addCartItem , cartItem}) => {
     const [searchKeyWords, SetSearchKeyWords] = useState("");
     const [filterData, setFilterData] = useState([]);
     const [category, setCategory] = useState('');
@@ -111,7 +111,7 @@ const SearchPage = ({ addCartItem }) => {
 
             <div>
                 {
-                    category && <Details addCartItem = {addCartItem} category={category} />
+                    category && <Details addCartItem = {addCartItem} cartItem={cartItem} category={category} />
                 }
             </div>
         </div>
