@@ -3,9 +3,6 @@ import React from 'react';
 const User = (props) => {
     let data = props.data; 
     let clickMe = props.clickHandlers;
-
-
-
     return (
         <div>
             <div>
