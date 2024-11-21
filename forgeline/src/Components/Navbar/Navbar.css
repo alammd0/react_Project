@@ -1,0 +1,43 @@
+.NavBar_wrapper{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: background 0.3s ease;
+    z-index: 100;
+    padding: 1.25rem 0;
+}
+
+.NavBar_wrapper.scrolled {
+    background-color: rgba(6, 5, 5, 0.8);
+}
+
+.NavBar_Container {
+    overflow: hidden;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar_item_container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.Navbar_item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.item {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+}
