@@ -115,7 +115,6 @@ const Navbar = () => {
               </g>
             </g>
           </svg>
-          {/* <p>Logo</p> */}
         </div>
 
         <div className="Navbar_item_container">
@@ -145,7 +144,7 @@ const Navbar = () => {
           </ul>
 
           <div>
-            <Link>
+            <Link className="navbar_requ_btn">
               <button>Request A Consult</button>
             </Link>
           </div>

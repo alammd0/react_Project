@@ -1,0 +1,69 @@
+.hero_wrapper {
+    background-image: url("../../assets/home-hero.webp");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Text_Container {
+    margin-top: 1rem;
+}
+
+.markating_container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.markating_container>p {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.horiz_line {
+    height: 0.015px;
+    width: 100px;
+    background-color: rgb(216, 201, 66, 0.5);
+}
+
+
+.heading_text_container>h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0.8;
+    letter-spacing: 1px;
+}
+
+.heading_text_container > h1 > span{
+    color: #CB7958;
+}
+
+.hero_btn{
+    margin-top: 3rem;
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    color: rgb(255, 244, 244);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #CB7958;
+    border-radius: 4px;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.hero_btn:hover{
+    transform: scale(1.1);
+}

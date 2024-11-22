@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
+import Hero from './Components/Home/Hero'
+import Home from './Components/Home/Home'
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
     <div className='mainContent'>
       <Navbar></Navbar>
 
-      <Hero />
+      <Home/>
     </div>
 
   )

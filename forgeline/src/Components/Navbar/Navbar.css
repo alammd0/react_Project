@@ -5,11 +5,14 @@
     left: 0;
     transition: background 0.3s ease;
     z-index: 100;
-    padding: 1.25rem 0;
+    padding: 1.5rem 0;
+
 }
 
 .NavBar_wrapper.scrolled {
-    background-color: rgba(6, 5, 5, 0.8);
+    background-color: rgba(6, 5, 5, 0.9);
+    padding: 1rem 0;
+    transition: all 0.5s;
 }
 
 .NavBar_Container {
@@ -40,4 +43,14 @@
     font-size: 1.25rem;
     font-weight: 500;
     color: white;
+}
+
+.navbar_requ_btn > button{
+    background-color: #CB7958;
+    border: none;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
 }
