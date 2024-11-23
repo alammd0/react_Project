@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Services.css"
+import ReadMore from '../../ReadMoreBtn/ReadMore'
 
 const Services = ({ serviceData }) => {
     return (
@@ -28,7 +29,10 @@ const Services = ({ serviceData }) => {
             </div>
 
             <Link className='service_btn' to="/">
-                <button>SEE More</button>
+                {/* <button>SEE More <span>&rarr;</span> </button> */}
+
+                <ReadMore text = "See More" />
+                
             </Link>
 
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ourCard } from '../../Data/home'
+import { ourCard } from '../../../Data/home'
 import CardWe from './CardWe'
 import "./Weare.css"
 

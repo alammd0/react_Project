@@ -64,3 +64,71 @@ export const serviceData = [
 		url: "https://industrialstrengthmarketing.com/img/icon-communcator.svg",
 	},
 ];
+
+
+export const sliderCardData = [
+	{
+		id: "1",
+		title: "Duroair Technologies",
+		desc: "Learn how Duroair's new industrial website design and strategic, integrated approach helped achieve 200% year-over-year revenue growth for the leading North American, industrial clean air solutions provider.",
+		url: "https://industrialstrengthmarketing.com/img/resized/case-studies/duroair-overview.webp"
+	},
+	{
+		id: "2",
+		title: "Featured Project",
+		desc: "Loearn how industrial website development helped transform Southern Metal Fabricators into an online presence for successful lead generation.",
+		url: "https://industrialstrengthmarketing.com/img/resized/case-studies/smf-overview.webp"
+	},
+	{
+		id: "3",
+		title: "Manufacturing Day",
+		desc: "Thanks to creative B2B marketing, Manufacturing Day saw their greatest event attendance since the annual event began in 2012.",
+		url: "https://industrialstrengthmarketing.com/img/resized/case-studies/mfgday-overview.webp"
+	},
+	{
+		id: "4",
+		title: "Manufacturing Extension Partnership",
+		desc: "Need guidance on how to develop a brand strategy? Here's how the Manufacturing Extension Partnership found its brand voice.",
+		url: "https://industrialstrengthmarketing.com/img/resized/case-studies/mep-overview.webp"
+	},
+	{
+		id: "5",
+		title: "Hennessy Services Network",
+		desc: "INDUSTRIAL launched Hennessy's workforce recruitment program in just 30 days, resulting in 100% more qualified job applicants.",
+		url: "https://industrialstrengthmarketing.com/img/resized/case-studies/HEN_Recuit-overview.webp"
+	},
+	{
+		id: "6",
+		title: "COATS",
+		desc: "In just 60 days INDUSTRIAL developed B2B product launch marketing with a new product product name and visual identity, along with sales collateral and email promotion.",
+		url: "https://industrialstrengthmarketing.com/img/resized/case-studies/hennessy-overview.webp"
+	},
+	{
+		id: "7",
+		title: "Wearwell",
+		desc: "INDUSTRIAL developed a responsive, browser-based app that streamlined a critical on-site needs assessment service for the No. 1 industrial ergonomic flooring and matting manufacturer.",
+		url: "https://industrialstrengthmarketing.com/img/resized/case-studies/wearwell-overview.webp"
+	}
+]
+
+
+export const worksData = [
+	{
+		id: "1",
+		title: "Agency of Record",
+		desc: "For industrials that demand the full attention, capabilities, and expertise of an industrial marketing agency.",
+		url: "https://industrialstrengthmarketing.com/img/icon-agency-of-record.svg"
+	},
+	{
+		id: "2",
+		title: "Structured solutions",
+		desc: "Monthly programs for industrials lacking the time and resources to stay connected with customers.",
+		url: "https://industrialstrengthmarketing.com/img/icon-structured-solutions.svg"
+	},
+	{
+		id: "3",
+		title: "Project basis",
+		desc: "For industrials that have a project that demands no less than the best in strategy and execution.",
+		url: "https://industrialstrengthmarketing.com/img/icon-project-basis.svg"
+	}
+]

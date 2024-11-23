@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import industrial from "../../assets/Industrial_Trade_Show_Playbook_268.png"
+import industrial from "../../../assets/Industrial_Trade_Show_Playbook_268.png"
 import "./NewIntud.css"
 import { GrLinkNext } from "react-icons/gr";
 

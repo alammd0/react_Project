@@ -1,9 +1,11 @@
 import React from 'react'
-import Hero from './Hero'
-import NewIntud from './NewIntud'
-import Weare from './Weare'
-import Services from './Services'
+import Hero from './hero/Hero'
+import Services from './Servies/Services'
 import { serviceData } from '../../Data/home'
+import NewIntud from './NewIntud/NewIntud'
+import Weare from './Cardwe/Weare'
+import CardSlider from './CardSlider/CardSlider'
+import { sliderCardData } from '../../Data/home'
 
 const Home = () => {
   return (
@@ -16,13 +18,17 @@ const Home = () => {
         <NewIntud />
       </div>
 
-      <div style={{padding: "130px 0 90px"}}>
+      <div style={{ padding: "130px 0 90px" }}>
         <Weare />
       </div>
 
-      <div style={{padding: "60px 0 60px"}} >
-        <Services serviceData = {serviceData} />
-      </div>      
+      <div style={{ padding: "60px 0 60px" }} >
+        <Services serviceData={serviceData} />
+      </div>
+
+      <div>
+        <CardSlider sliderCardData={sliderCardData} />
+      </div>
     </div>
   )
 }
