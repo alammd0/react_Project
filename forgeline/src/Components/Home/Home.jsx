@@ -6,6 +6,9 @@ import NewIntud from './NewIntud/NewIntud'
 import Weare from './Cardwe/Weare'
 import CardSlider from './CardSlider/CardSlider'
 import { sliderCardData } from '../../Data/home'
+import Work from './WorkPage/Work'
+import { worksData } from '../../Data/home'
+import Footer from '../Footer/Footer'
 
 const Home = () => {
   return (
@@ -29,6 +32,15 @@ const Home = () => {
       <div>
         <CardSlider sliderCardData={sliderCardData} />
       </div>
+
+      <div style={{ padding: "80px 0 60px" }}>
+        <Work  worksData = {worksData}/>
+      </div>
+
+      <div>
+        <Footer/>
+      </div>
+
     </div>
   )
 }

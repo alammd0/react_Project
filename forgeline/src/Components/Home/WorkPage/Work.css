@@ -1,0 +1,56 @@
+.work_container {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.work_head_container {
+    text-align: center;
+    line-height: 2;
+}
+
+.work_head_container>p:nth-child(1) {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #CB7958;
+}
+
+.work_head_container>h2 {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+
+.word_card_data_container{
+    display: flex;
+    gap: 30px;
+}
+
+.original_work_card{
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+
+}
+
+
+.work_number > p{
+    font-size: 10rem;
+    font-weight: 700;
+    color: #f3ead8;
+}
+
+.work_data{
+    padding-top: 90px;
+    line-height: 1.6;
+}
+
+.work_data_subData > h2{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
