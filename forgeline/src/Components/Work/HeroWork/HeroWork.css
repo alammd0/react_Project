@@ -1,0 +1,35 @@
+.heroWork_Wrapper{
+    background-image: url("../../../assets/Hero/work-hero.webp");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
+    color: white;  
+    position: relative; 
+}
+
+.heroWork_Container{
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero_work_txt{
+    position: absolute;
+    top: 180px;
+    /* left: 25px; */
+    line-height: 1.6;
+}
+
+.hero_work_txt > h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+}
+
+.hero_work_txt > p{
+    width: 60%;
+    font-size: 1.25rem;
+    font-weight: 400;
+}

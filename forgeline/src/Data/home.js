@@ -108,6 +108,24 @@ export const sliderCardData = [
 		title: "Wearwell",
 		desc: "INDUSTRIAL developed a responsive, browser-based app that streamlined a critical on-site needs assessment service for the No. 1 industrial ergonomic flooring and matting manufacturer.",
 		url: "https://industrialstrengthmarketing.com/img/resized/case-studies/wearwell-overview.webp"
+	},
+	{
+		id: "8",
+		title: "Worthington Industries",
+		desc: 'Loearn how a B2B content marketing strategy shifted Worthington Industries into a more globally competitive market position.',
+		url: "https://industrialstrengthmarketing.com/img/case-studies/worthington-overview.jpg"
+	},
+	{
+		id: "9",
+		title: "ProcessBarron",
+		desc: "This is how a brand positioning agency helped ProcessBarron shift its lead generation efforts toward client engagements with higher average purchase values and grew $50 million.",
+		url: "https://industrialstrengthmarketing.com/img/case-studies/processbarron-overview.jpg"
+	},
+	{
+		id: "10",
+		title: "Landair Transportation",
+		desc: "Learn how INDUSTRIAL applied driver recruiting strategies to reduce Landair's driver cost per hire by 30%.",
+		url: "https://industrialstrengthmarketing.com/img/case-studies/landair-overview.jpg"
 	}
 ]
 

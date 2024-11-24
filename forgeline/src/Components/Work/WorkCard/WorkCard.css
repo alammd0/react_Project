@@ -1,0 +1,30 @@
+.wordCard_Wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.workCard_card_data{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.word_Card_txt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.work_card_image{
+    height: 420px;
+}
+
+.work_card_image img{
+    height: 100%;
+    border-radius: 4px;
+}

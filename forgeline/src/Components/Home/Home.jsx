@@ -34,11 +34,11 @@ const Home = () => {
       </div>
 
       <div style={{ padding: "80px 0 60px" }}>
-        <Work  worksData = {worksData}/>
+        <Work worksData={worksData} />
       </div>
 
       <div>
-        <Footer/>
+        <Footer />
       </div>
 
     </div>

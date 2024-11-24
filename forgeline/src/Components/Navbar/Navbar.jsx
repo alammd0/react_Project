@@ -117,9 +117,11 @@ const Navbar = () => {
           </svg>
         </div>
 
+        
+
         <div className="Navbar_item_container">
           <ul className="Navbar_item">
-            <NavLink className="item"  to="/">
+            <NavLink to = '/work'  className="item">
               <li>Work</li>
             </NavLink>
             <NavLink className="item" to="/">
