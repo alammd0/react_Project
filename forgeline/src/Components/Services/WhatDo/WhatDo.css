@@ -1,0 +1,105 @@
+.whatdo_wrapper{
+    max-width: 650px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:60px;
+}
+
+.whatdo_wrapper > h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.service_categry{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image_box{
+    margin-top: 40px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F1E4;
+    border-top-left-radius: 49%;
+    border-top-right-radius: 49%;
+}
+
+.image_box img{
+    height: 100px;
+    width: 100px;
+}
+
+.txt_box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 20px;
+}
+
+.txt_boxex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.txt_boxex > h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    opacity: 0.8;
+}
+
+.txt_boxex > p{
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.last_whatDo{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(147, 122, 122);
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.get_touch{
+    padding-top: 60px;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.get_touch > p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #403f33;
+}
+.services_btn button{
+    padding: 0.75rem 1rem;
+    border: none;
+    background-color: #CB7958;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    transition: all 0.5s;
+    border-radius: 12px;
+}
+
+.services_btn button:hover{
+    transform: translateX(23px);
+}

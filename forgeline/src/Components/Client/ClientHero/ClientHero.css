@@ -1,0 +1,9 @@
+.ClientHero_Wrapper{
+    background-image: url("../../../assets/Hero/clients.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
+    color: white;  
+    position: relative; 
+}

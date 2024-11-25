@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar/Navbar'
 import Home from './Components/Home/Home'
 import { Route, Routes } from 'react-router-dom'
 import Work from './Components/Work/Work'
+import Services from './Components/Services/services'
+import Client from './Components/Client/Client'
 
 function App() {
   return (
@@ -12,6 +14,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/work' element={<Work />}> </Route>
+        <Route path='/service' element=<Services /> />
+        <Route path='/client' element={<Client />} />
+
       </Routes>
     </div>
 

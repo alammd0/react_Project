@@ -5,27 +5,28 @@ import "./Navbar.css"
 
 const Navbar = () => {
 
-  const[scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
-    if(window.scrollY > 50){
+    if (window.scrollY > 50) {
       setScrolled(true);
-    }else{
+    } else {
       setScrolled(false);
     }
   }
 
-  useEffect( () => {
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
 
-  },  []);
+  }, []);
 
   return (
     <div className={`NavBar_wrapper ${scrolled ? "scrolled" : " "}`}>
       <div className="NavBar_Container">
         <div className="logo">
+
           <svg
             width="180px"
             height="20px"
@@ -117,18 +118,18 @@ const Navbar = () => {
           </svg>
         </div>
 
-        
+
 
         <div className="Navbar_item_container">
           <ul className="Navbar_item">
-            <NavLink to = '/work'  className="item">
+            <NavLink to='/work' className="item">
               <li>Work</li>
             </NavLink>
-            <NavLink className="item" to="/">
+            <NavLink className="item" to="/client">
               <li>Clients</li>
             </NavLink>
 
-            <NavLink className="item" >
+            <NavLink to="/service" className="item" >
               <li >Services</li>
             </NavLink>
 
