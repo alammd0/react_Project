@@ -1,11 +1,16 @@
 /** @format */
 import React, { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css"
 
 const Navbar = () => {
 
   const [scrolled, setScrolled] = useState(false);
+
+
+  const location = useLocation();
+
+  const isInsight = location.pathname === "/insight" ; 
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
@@ -23,7 +28,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`NavBar_wrapper ${scrolled ? "scrolled" : " "}`}>
+    <div className={`NavBar_wrapper ${scrolled ? "scrolled" : " "} ${isInsight ? "active-insight" : ""}`}>
       <div className="NavBar_Container">
         <div className="logo">
 
@@ -133,11 +138,7 @@ const Navbar = () => {
               <li >Services</li>
             </NavLink>
 
-            <NavLink className="item" >
-              <li >Studios</li>
-            </NavLink>
-
-            <NavLink className="item">
+            <NavLink className="item" to="/insight">
               <li >Insights</li>
             </NavLink>
 

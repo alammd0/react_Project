@@ -1,0 +1,103 @@
+.feture_container{
+    display: flex;
+    margin-top: 170px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.feture_container > h6{
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    color: #CB7958;
+}
+
+.feture_container > h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.feture_container > p { 
+    font-size: 1.25rem;
+    max-width: 65%;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 400;
+    color: #8F7B71;
+}
+
+
+/* Styling Podcast */
+
+
+.podcast_container{
+    filter: grayscale(100%);
+    background-image: url('../../assets/Hero/podcasts-jumbotron.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+.podcast_main_container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    color: white;
+    align-items: start;
+    justify-content: center;
+    /* gap: 15px; */
+}
+
+.podcast_main_container > h6{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #CB7958;
+}
+
+.podcast_main_container > h2 {
+    max-width: 50%;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.podcast_main_container > p{
+    max-width: 50%;
+    font-size: 1rem;
+    text-transform:capitalize;
+    font-weight: 400;
+}
+
+.btn_insight{
+    color: white;
+    margin-top: 2rem;
+}
+
+.btn_insight button{
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: 1px solid #674e42;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.btn_insight:hover button{
+    transform: translateX(12px) scale(1.1);
+    /* transform: scale(1.1); */
+}
