@@ -22,6 +22,8 @@ const PodcastDetail = ({ insightData }) => {
                             <div style={{paddingTop : "24px"}}>
                                 <ReadMore text="Learn More" />
                             </div>
+
+                            
                         </div>
                     </div>
                 ))
