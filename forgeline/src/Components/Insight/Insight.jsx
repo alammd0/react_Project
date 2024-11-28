@@ -1,6 +1,9 @@
 import React from 'react'
 import "./Insight.css"
 import Podcast from './Podcast'
+import PodcastDetail from './PodcastDetail'
+import { insightData } from '../../Data/insight'
+import Footer from '../Footer/Footer'
 
 const Insight = () => {
     return (
@@ -15,6 +18,15 @@ const Insight = () => {
 
             <div className='podcar_wrapper' style={{ marginTop: "120px", marginBottom: "40px" }}>
                 <Podcast />
+            </div>
+
+            <div style={{ marginTop: "120px", marginBottom: "40px" }}>
+                <PodcastDetail insightData={insightData} />
+            </div>
+
+
+            <div>
+                <Footer/>
             </div>
 
         </div>
