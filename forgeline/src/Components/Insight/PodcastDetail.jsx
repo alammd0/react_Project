@@ -12,7 +12,7 @@ const PodcastDetail = ({ insightData }) => {
                         </div>
 
                         <div className='txt_container'>
-                            <h6>PODCASTS</h6>
+                            <h6>PODCAST</h6>
 
                             <div className='parag_desc'>
                                 <h2>{item.title}</h2>
